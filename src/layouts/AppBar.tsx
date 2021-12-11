@@ -73,7 +73,7 @@ export default function LSCAppBar() {
                     component="div"
                     sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
                 >
-                    Livestream Care
+                    Livestream Cares
                 </Typography>
                 <Search>
                     <SearchIconWrapper>

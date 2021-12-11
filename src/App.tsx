@@ -3,7 +3,7 @@ import { createTheme, responsiveFontSizes } from '@mui/material';
 import react, { useState } from 'react';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import Disclaimer from './components/Disclaimer';
+import Disclaimer from './pages/Disclaimer';
 import Layout from './layouts/Layout';
 import GettingStarted from './pages/GettingStarted/GettingStarted';
 import Guide from './pages/Guide';
