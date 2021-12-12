@@ -2,28 +2,18 @@ import { Autocomplete, Box, FormControl, Input, InputAdornment, InputLabel, Text
 import { useState } from "react";
 
 import statesLookup from '../../data/us-states.json';
+import IUseUserInfo from '../../interfaces/IUseUserInfo';
 
-interface WhatAboutYouFormState {
-    usState: string | null,
-    age : number | null,
-    projectedIncome: number | null
-}
-
-export default function WhatAboutYou() {
+export default function WhatAboutYou(props: IUseUserInfo) {
     const [ usStateDisplay, setUSStateDisplay ] = useState('');
-    const [ formState, setFormState ] = useState<WhatAboutYouFormState>({
-        usState: null,
-        age: null,
-        projectedIncome: null
-    });
     
     return (
         <Box component="form" sx={{ mt: "2.5rem" }}>
             <FormControl className="what-about-you-input-container" fullWidth={true}>
                 <Autocomplete
-                    value={formState.usState}
+                    value={props.userInfo.usState}
                     onChange={(event: any, newValue: string | null) => {
-                        setFormState({...formState, usState: newValue})
+                        props.setUserInfo({...props.userInfo, usState: newValue})
                     }}
                     inputValue={usStateDisplay}
                     onInputChange={(event, newInputValue) => {
@@ -38,28 +28,28 @@ export default function WhatAboutYou() {
             </FormControl>
             <FormControl className="what-about-you-input-container" fullWidth={true} sx={{ mb: "2.5rem" }}>
                 <InputLabel htmlFor="age">Age</InputLabel>
-                <Input id="age" value={formState.age ? formState.age.toString() : ""} onChange={(evt) => {
+                <Input id="age" value={props.userInfo.age ? props.userInfo.age.toString() : ""} onChange={(evt) => {
                     const parsedAge = parseInt(evt.target.value);
 
                     if (!isNaN(parsedAge)) {
                         if (parsedAge > 0 && parsedAge <= 150)
-                            setFormState({...formState, age: parsedAge});
+                            props.setUserInfo({...props.userInfo, age: parsedAge});
                         else if (parsedAge > 150)
-                            setFormState({...formState, age: 150});
+                            props.setUserInfo({...props.userInfo, age: 150});
                     }
                     else
-                        setFormState({...formState, age: null});
+                        props.setUserInfo({...props.userInfo, age: null});
                 }} />
             </FormControl>
             <FormControl className="what-about-you-input-container" fullWidth={true} sx={{ mb: "2.5rem" }}>
                 <InputLabel htmlFor="projectedIncome">Projected Income</InputLabel>
-                <Input id="projectedIncome" value={formState.projectedIncome ? formState.projectedIncome.toLocaleString("en-US") : ""} onChange={(evt) => {
+                <Input id="projectedIncome" value={props.userInfo.projectedIncome ? props.userInfo.projectedIncome.toLocaleString("en-US") : ""} onChange={(evt) => {
                     const parsedProjectedIncome = parseInt(evt.target.value.replace(/,/g, ""));
 
                     if (!isNaN(parsedProjectedIncome))
-                        setFormState({...formState, projectedIncome: parsedProjectedIncome});
+                        props.setUserInfo({...props.userInfo, projectedIncome: parsedProjectedIncome});
                     else
-                        setFormState({...formState, projectedIncome: null});
+                        props.setUserInfo({...props.userInfo, projectedIncome: null});
                 }} startAdornment={<InputAdornment position="start">$</InputAdornment>} />
             </FormControl>
         </Box>

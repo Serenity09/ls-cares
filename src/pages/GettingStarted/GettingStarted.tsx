@@ -7,14 +7,17 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import { Navigate, useLocation } from 'react-router-dom';
 
+import IUseUserInfo from '../../interfaces/IUseUserInfo';
+
 import Intro from './Intro';
 import WhatAboutYou from './WhatAboutYou';
+import TheGoodPart from './TheGoodPart';
 
-const steps = [{title: 'Intro', element: <Intro />}, {title: 'What about you?', element: <WhatAboutYou />}, {title: 'The good part', element: <div></div>}];
-
-export default function GettingStarted() {
+export default function GettingStarted(props: IUseUserInfo) {
   const [activeStep, setActiveStep] = React.useState(0);
   const location = useLocation();
+
+  const steps = [{title: 'Intro', element: <Intro />}, {title: 'What about you?', element: <WhatAboutYou {...props} />}, {title: 'The good part', element: <TheGoodPart {...props.userInfo} />}];
 
   const handleNext = () => {
     setActiveStep((prevActiveStep) => prevActiveStep + 1);
