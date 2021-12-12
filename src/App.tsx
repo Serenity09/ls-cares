@@ -11,10 +11,7 @@ import Disclaimer from './pages/Disclaimer/Disclaimer';
 import GettingStarted from './pages/GettingStarted/GettingStarted';
 import Guide from './pages/Guide';
 
-export function App() {
-  const [ isDisclaimerOpen, setIsDisclaimerOpen ] = useState(true);
-  const [ acceptedDisclaimer, setAcceptedDisclaimer ] = useState(true);
-  
+export function App() {  
   const [ userInfo, setUserInfo ] = useState<IUserInfo>({
     usState: null,
     age: null,
@@ -24,17 +21,9 @@ export function App() {
   let theme = createTheme();
   theme = responsiveFontSizes(theme);
 
-  const closeDisclaimer = function(acceptedDisclaimer: boolean) {
-    if (acceptedDisclaimer)
-      setIsDisclaimerOpen(false);
-    else {
-      setAcceptedDisclaimer(false);
-    }
-  }
-
   return (
     <ThemeProvider theme={theme}>
-      <Disclaimer open={isDisclaimerOpen} onClose={closeDisclaimer} />
+      <Disclaimer />
       <Layout>
         <BrowserRouter>
           <Routes>

@@ -7,10 +7,7 @@ import DialogContent from '@mui/material/DialogContent';
 import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
 import { createStyles, makeStyles } from '@mui/styles';
-interface DisclaimerSettings {
-    open: boolean,
-    onClose: Function
-}
+import { useState } from 'react';
 
 const useStyles = makeStyles(() =>
   createStyles({
@@ -24,14 +21,24 @@ const useStyles = makeStyles(() =>
     }
   }));
 
-export default function Disclaimer(props: DisclaimerSettings) {
+export default function Disclaimer() {
   const classes = useStyles();
+
+  const [ isDisclaimerOpen, setIsDisclaimerOpen ] = useState(true);
+  const [ acceptedDisclaimer, setAcceptedDisclaimer ] = useState(true);
+
+  const closeDisclaimer = function(acceptedDisclaimer: boolean) {
+    if (acceptedDisclaimer)
+      setIsDisclaimerOpen(false);
+    else
+      setAcceptedDisclaimer(false);
+  }
 
   return (
     <div>
       <Dialog
-        open={props.open}
-        onClose={() => props.onClose(false)}
+        open={isDisclaimerOpen}
+        onClose={() => closeDisclaimer(false)}
         aria-labelledby="alert-dialog-title"
         aria-describedby="alert-dialog-description"
       >
@@ -51,8 +58,7 @@ export default function Disclaimer(props: DisclaimerSettings) {
           </DialogContentText>
         </DialogContent>
         <DialogActions>
-          <Button onClick={() => props.onClose(false)}>Disagree</Button>
-          <Button onClick={() => props.onClose(true)} autoFocus>I Accept</Button>
+          <Button onClick={() => closeDisclaimer(true)} autoFocus>I Accept</Button>
         </DialogActions>
       </Dialog>
     </div>
