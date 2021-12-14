@@ -15,7 +15,9 @@ export function App() {
   const [ userInfo, setUserInfo ] = useState<IUserInfo>({
     usState: null,
     age: null,
-    projectedIncome: null
+    projectedIncome: null,
+    familySize: 1,
+    isPregnant: false
   });
 
   let theme = createTheme();
