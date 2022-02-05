@@ -1,12 +1,12 @@
-import usStates from '../data/us-states.json';
+import usStates from "../data/us-states.json";
 
 export function getUSStates() {
-    return usStates;
+  return usStates;
 }
 
 export function getUSStateByName(stateName: string | null) {
-    return usStates.find((usState) => usState.name === stateName);
+  return usStates.find((usState) => usState.name === stateName);
 }
 export function getUSStateByAbbreviation(stateAbbreviation: string | null) {
-    return usStates.find((usState) => usState.abbreviation === stateAbbreviation);
+  return usStates.find((usState) => usState.abbreviation === stateAbbreviation);
 }
