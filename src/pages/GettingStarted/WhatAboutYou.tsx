@@ -3,12 +3,12 @@ import { useState } from "react";
 
 import { getUSStates, getUSStateByAbbreviation, getUSStateByName } from '../../services/usStateService';
 
-import IUseUserInfo from '../../interfaces/IUseUserInfo';
+import { UseUserInformation } from '../../types/UserInfo';
 
 const MAX_AGE = 150;
 const MAX_FAMILY_SIZE = 50;
 
-export default function WhatAboutYou(props: IUseUserInfo) {
+export default function WhatAboutYou(props: UseUserInformation) {
     const [ usStateValue, setUSStateValue ] = useState<string | null>(getUSStateByAbbreviation(props.userInfo.usState) ? getUSStateByAbbreviation(props.userInfo.usState)!.name : "");
     
     return (

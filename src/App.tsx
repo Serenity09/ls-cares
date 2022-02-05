@@ -3,7 +3,7 @@ import { createTheme, responsiveFontSizes } from '@mui/material';
 import react, { useState } from 'react';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import IUserInfo from './interfaces/IUserInfo';
+import { UserInformation } from './types/UserInfo';
 
 import Layout from './layouts/Layout';
 
@@ -12,7 +12,7 @@ import GettingStarted from './pages/GettingStarted/GettingStarted';
 import Guide from './pages/Guide';
 
 export function App() {  
-  const [ userInfo, setUserInfo ] = useState<IUserInfo>({
+  const [ userInfo, setUserInfo ] = useState<UserInformation>({
     usState: null,
     age: null,
     projectedIncome: null,

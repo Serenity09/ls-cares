@@ -1,14 +1,14 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
 
-import IUseUserInfo from '../../interfaces/IUseUserInfo';
+import { UseUserInformation } from '../../types/UserInfo';
 
 import GettingStartedStepper from './GettingStartedStepper';
 import Intro from './Intro';
 import WhatAboutYou from './WhatAboutYou';
 import TheGoodPart from './TheGoodPart';
 
-export default function GettingStarted(props: IUseUserInfo) {
+export default function GettingStarted(props: UseUserInformation) {
   const steps = [
     {title: 'Intro', element: <Intro />}, 
     {title: 'What about you?', element: <WhatAboutYou {...props} />}, 
