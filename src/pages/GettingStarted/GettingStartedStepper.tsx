@@ -26,14 +26,10 @@ export default function GettingStartedStepper(
     setActiveStep((prevActiveStep) => prevActiveStep - 1);
   };
 
-  const handleReset = () => {
-    setActiveStep(0);
-  };
-
   return (
     <>
       <Stepper activeStep={activeStep} sx={{ mb: "1rem" }}>
-        {props.steps.map((step, index) => {
+        {props.steps.map((step) => {
           const stepProps: { completed?: boolean } = {};
           const labelProps: {
             optional?: React.ReactNode;

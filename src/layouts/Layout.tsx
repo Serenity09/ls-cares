@@ -1,10 +1,13 @@
-import react, { useState } from "react";
 import CssBaseline from "@mui/material/CssBaseline";
 import Container from "@mui/material/Container";
 
 import AppBar from "./AppBar";
+import { ReactJSXElement } from "@emotion/react/types/jsx-namespace";
 
-export default function Layout(props: any) {
+type LayoutProps = {
+  children?: ReactJSXElement;
+};
+export default function Layout(props: LayoutProps) {
   return (
     <>
       <CssBaseline />
