@@ -1,8 +1,7 @@
-import { Autocomplete, Box, Checkbox, FormControl, FormControlLabel, Input, InputAdornment, InputLabel, TextField } from "@mui/material";
 import { useState } from "react";
+import { Autocomplete, Box, Checkbox, FormControl, FormControlLabel, Input, InputAdornment, InputLabel, TextField } from "@mui/material";
 
 import { getUSStates, getUSStateByAbbreviation, getUSStateByName } from '../../services/usStateService';
-
 import { UseUserInformation } from '../../types/UserInfo';
 
 const MAX_AGE = 150;

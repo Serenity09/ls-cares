@@ -1,4 +1,3 @@
-import * as React from 'react';
 import { useState } from 'react';
 
 import Button from '@mui/material/Button';
@@ -7,27 +6,22 @@ import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
 import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
-import { createStyles, makeStyles } from '@mui/styles';
 
 import Cookies from 'js-cookie';
 
-const useStyles = makeStyles(() =>
-  createStyles({
-    disclaimerContent: {
-      "& p:not(:first-child)": {
-        marginTop: '1rem'
-      }
-    },
-    disclaimerBlock: {
-      marginTop: '1rem'
-    }
-  })
-);
+const disclaimerContentStyle = {
+  "& p:not(:first-child)": {
+    marginTop: '1rem'
+  }
+}
+const disclaimerBlockStyle = {
+  marginTop: '1rem'
+}
 
 //store user's disclaimer selection in a cookie
 const ACCEPTED_DISCLAIMER_COOKIE_NAME = "acceptedDisclaimer";
 const VERSION = 1;
-const DISCLAIMER_EXPIRATION = 7; //in days
+const DISCLAIMER_EXPIRATION = 0; //in days
 
 let defaultDisclaimerOpen = true;
 try {
@@ -47,7 +41,6 @@ try {
 catch (err) { }
 
 export default function Disclaimer() {
-  const classes = useStyles();
   const [ isDisclaimerOpen, setIsDisclaimerOpen ] = useState(defaultDisclaimerOpen);
 
   const closeDisclaimer = function(acceptedDisclaimer: boolean) {
@@ -69,20 +62,20 @@ export default function Disclaimer() {
       aria-describedby="alert-dialog-description"
     >
       <DialogTitle id="alert-dialog-title">Disclaimer</DialogTitle>
-      <DialogContent className={classes.disclaimerContent}>
-        <DialogContentText className={classes.disclaimerBlock}>
+      <DialogContent sx={disclaimerContentStyle}>
+        <DialogContentText sx={disclaimerBlockStyle}>
           The information available on Livestream Cares (LSC) may include inaccuracies, omissions, and other errors. LSC only provides information regarding health insurance coverage and is not intended nor implied to substitute professional advice. We are not lawyers and this should not be considered legal advice. We are not doctors and this should not be considered medical advice. Please contact the appropriate professional for any personal, financial, medical, health, or legal decisions.
         </DialogContentText>
-        <DialogContentText className={classes.disclaimerBlock}>
+        <DialogContentText sx={disclaimerBlockStyle}>
           We hope LSC helps make you a more knowledgeable health insurance consumer. We make no representations about the accuracy, content, reliability, completeness, or legality of this information for any purpose. We cannot guarantee insurance coverage or financial exposure for any health services.
         </DialogContentText>
-        <DialogContentText className={classes.disclaimerBlock}>
+        <DialogContentText sx={disclaimerBlockStyle}>
           In no event shall the owners of or contributors to LSC be liable for direct, indirect, punitive, incidental, special, consequential damages or any damages whatsoever, arising out of or connected with the use of this website or the information contained herein. LSC contains links to third party websites. We cannot control the information provided on those websites and we will not take any responsibility for the information or content thereon.
         </DialogContentText>
-        <DialogContentText className={classes.disclaimerBlock}>
+        <DialogContentText sx={disclaimerBlockStyle}>
           In short, we're trying our best, but we can't deal with legal issues.
         </DialogContentText>
-        <DialogContentText className={classes.disclaimerBlock}>
+        <DialogContentText sx={disclaimerBlockStyle}>
           Last updated 12/12/2021
         </DialogContentText>
       </DialogContent>
