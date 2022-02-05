@@ -1,6 +1,6 @@
 import { ThemeProvider } from '@emotion/react';
 import { createTheme, responsiveFontSizes } from '@mui/material';
-import react, { useState } from 'react';
+import { useState } from 'react';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import { UserInformation } from './types/UserInfo';

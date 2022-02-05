@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { Autocomplete, Box, Checkbox, FormControl, FormControlLabel, Input, InputAdornment, InputLabel, TextField } from "@mui/material";
 
 import { getUSStates, getUSStateByAbbreviation, getUSStateByName } from '../../services/usStateService';
@@ -8,6 +8,7 @@ const MAX_AGE = 150;
 const MAX_FAMILY_SIZE = 50;
 
 export default function WhatAboutYou(props: UseUserInformation) {
+    // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
     const [ usStateValue, setUSStateValue ] = useState<string | null>(getUSStateByAbbreviation(props.userInfo.usState) ? getUSStateByAbbreviation(props.userInfo.usState)!.name : "");
     
     return (
@@ -15,7 +16,7 @@ export default function WhatAboutYou(props: UseUserInformation) {
             <FormControl className="what-about-you-input-container" fullWidth={true}>
                 <Autocomplete
                     value={usStateValue}
-                    onChange={(event: any, newValue: string | null) => {
+                    onChange={(event: React.SyntheticEvent, newValue: string | null) => {
                         setUSStateValue(newValue);
                         
                         const usState = getUSStateByName(newValue);

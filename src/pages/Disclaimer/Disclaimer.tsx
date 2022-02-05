@@ -38,7 +38,7 @@ try {
       Cookies.remove(ACCEPTED_DISCLAIMER_COOKIE_NAME);
   }
 }
-catch (err) { }
+catch (err) { console.warn("Invalid cookie", err) }
 
 export default function Disclaimer() {
   const [ isDisclaimerOpen, setIsDisclaimerOpen ] = useState(defaultDisclaimerOpen);
@@ -73,7 +73,7 @@ export default function Disclaimer() {
           In no event shall the owners of or contributors to LSC be liable for direct, indirect, punitive, incidental, special, consequential damages or any damages whatsoever, arising out of or connected with the use of this website or the information contained herein. LSC contains links to third party websites. We cannot control the information provided on those websites and we will not take any responsibility for the information or content thereon.
         </DialogContentText>
         <DialogContentText sx={disclaimerBlockStyle}>
-          In short, we're trying our best, but we can't deal with legal issues.
+          {"In short, we're trying our best, but we can't deal with legal issues."}
         </DialogContentText>
         <DialogContentText sx={disclaimerBlockStyle}>
           Last updated 12/12/2021
