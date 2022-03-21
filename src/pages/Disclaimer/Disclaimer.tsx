@@ -7,7 +7,7 @@ import DialogContent from "@mui/material/DialogContent";
 import DialogContentText from "@mui/material/DialogContentText";
 import DialogTitle from "@mui/material/DialogTitle";
 
-import Cookies from "js-cookie";
+import { useLocalStorage } from "../../hooks/useLocalStorage";
 
 const disclaimerContentStyle = {
   "& p:not(:first-child)": {
@@ -19,59 +19,55 @@ const disclaimerBlockStyle = {
 };
 
 //store user's disclaimer selection in a cookie
-const ACCEPTED_DISCLAIMER_COOKIE_NAME = "acceptedDisclaimer";
 const VERSION = 1;
-const DISCLAIMER_EXPIRATION = 0; //in days
+const DISCLAIMER_EXPIRATION = 7; //in days
 
-let defaultDisclaimerOpen = true;
-try {
-  const cookie = Cookies.get(ACCEPTED_DISCLAIMER_COOKIE_NAME);
+const isLastAcceptedDisclaimerValid = (
+  lastAcceptedDisclaimer: AcceptedDisclaimer | null
+) => {
+  if (!lastAcceptedDisclaimer) return false;
 
-  if (cookie !== undefined) {
-    const acceptedDisclaimerCookie = JSON.parse(cookie ?? "{}");
-    const acceptedDisclaimerDate = new Date(acceptedDisclaimerCookie.date);
+  const parsedDate = new Date(lastAcceptedDisclaimer.date);
+  return (
+    lastAcceptedDisclaimer.version === VERSION &&
+    new Date(
+      parsedDate.getFullYear(),
+      parsedDate.getMonth(),
+      parsedDate.getDate() + DISCLAIMER_EXPIRATION,
+      parsedDate.getHours(),
+      parsedDate.getMinutes(),
+      parsedDate.getSeconds()
+    ) >= new Date()
+  );
+};
 
-    if (
-      acceptedDisclaimerCookie.version === VERSION &&
-      new Date(
-        acceptedDisclaimerDate.getFullYear(),
-        acceptedDisclaimerDate.getMonth(),
-        acceptedDisclaimerDate.getDate() + DISCLAIMER_EXPIRATION,
-        acceptedDisclaimerDate.getHours(),
-        acceptedDisclaimerDate.getMinutes(),
-        acceptedDisclaimerDate.getSeconds()
-      ) >= new Date()
-    )
-      defaultDisclaimerOpen = false;
-    else Cookies.remove(ACCEPTED_DISCLAIMER_COOKIE_NAME);
-  }
-} catch (err) {
-  console.warn("Invalid cookie", err);
-}
+type AcceptedDisclaimer = {
+  date: Date;
+  version: number;
+};
 
 export default function Disclaimer() {
+  const [lastAcceptedDisclaimer, setLastAcceptedDisclaimer] =
+    useLocalStorage<AcceptedDisclaimer | null>("lastAcceptedDisclaimer", null);
+
+  const initialDisclaimerVisibility = !isLastAcceptedDisclaimerValid(
+    lastAcceptedDisclaimer
+  );
   const [isDisclaimerOpen, setIsDisclaimerOpen] = useState(
-    defaultDisclaimerOpen
+    initialDisclaimerVisibility
   );
 
   const closeDisclaimer = function (acceptedDisclaimer: boolean) {
     if (acceptedDisclaimer) {
       setIsDisclaimerOpen(false);
 
-      Cookies.set(
-        ACCEPTED_DISCLAIMER_COOKIE_NAME,
-        JSON.stringify({
-          date: new Date(),
-          version: 1,
-        })
-      );
+      setLastAcceptedDisclaimer({ version: VERSION, date: new Date() });
     }
   };
 
   return (
     <Dialog
       open={isDisclaimerOpen}
-      onClose={() => closeDisclaimer(false)}
       aria-labelledby="alert-dialog-title"
       aria-describedby="alert-dialog-description"
     >
@@ -113,9 +109,7 @@ export default function Disclaimer() {
         </DialogContentText>
       </DialogContent>
       <DialogActions>
-        <Button onClick={() => closeDisclaimer(true)} autoFocus>
-          I Accept
-        </Button>
+        <Button onClick={() => closeDisclaimer(true)}>I Accept</Button>
       </DialogActions>
     </Dialog>
   );

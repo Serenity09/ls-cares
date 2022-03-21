@@ -5,6 +5,7 @@ export type UserInformation = {
   familySize: number | null;
   isPregnant: boolean | undefined;
 };
+
 export type UseUserInformation = {
   userInfo: UserInformation;
   setUserInfo: (updatedUserInfo: UserInformation) => void;
