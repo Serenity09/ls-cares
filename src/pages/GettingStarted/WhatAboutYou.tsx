@@ -16,16 +16,17 @@ import {
   getUSStateByAbbreviation,
   getUSStateByName,
 } from "../../services/usStateService";
-import { UseUserInformation } from "../../types/UserInfo";
+import { useUserContext } from "../../user/UserContext";
 
 const MAX_AGE = 150;
 const MAX_FAMILY_SIZE = 50;
 
-export default function WhatAboutYou(props: UseUserInformation) {
+export default function WhatAboutYou() {
+  const { user, setUser } = useUserContext();
   const [usStateValue, setUSStateValue] = useState<string | null>(
-    getUSStateByAbbreviation(props.userInfo.usState)
+    getUSStateByAbbreviation(user.usState)
       ? // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-        getUSStateByAbbreviation(props.userInfo.usState)!.name
+        getUSStateByAbbreviation(user.usState)!.name
       : ""
   );
 
@@ -38,8 +39,8 @@ export default function WhatAboutYou(props: UseUserInformation) {
             setUSStateValue(newValue);
 
             const usState = getUSStateByName(newValue);
-            props.setUserInfo({
-              ...props.userInfo,
+            setUser({
+              ...user,
               usState: usState ? usState.abbreviation : null,
             });
           }}
@@ -58,16 +59,15 @@ export default function WhatAboutYou(props: UseUserInformation) {
         <InputLabel htmlFor="age">Age</InputLabel>
         <Input
           id="age"
-          value={props.userInfo.age ? props.userInfo.age.toString() : ""}
+          value={user.age ? user.age.toString() : ""}
           onChange={(evt) => {
             const parsedAge = parseInt(evt.target.value);
 
             if (!isNaN(parsedAge)) {
               if (parsedAge > 0 && parsedAge <= MAX_AGE)
-                props.setUserInfo({ ...props.userInfo, age: parsedAge });
-              else if (parsedAge > MAX_AGE)
-                props.setUserInfo({ ...props.userInfo, age: MAX_AGE });
-            } else props.setUserInfo({ ...props.userInfo, age: null });
+                setUser({ ...user, age: parsedAge });
+              else if (parsedAge > MAX_AGE) setUser({ ...user, age: MAX_AGE });
+            } else setUser({ ...user, age: null });
           }}
         />
       </FormControl>
@@ -80,8 +80,8 @@ export default function WhatAboutYou(props: UseUserInformation) {
         <Input
           id="projectedIncome"
           value={
-            props.userInfo.projectedIncome
-              ? props.userInfo.projectedIncome.toLocaleString("en-US")
+            user.projectedIncome
+              ? user.projectedIncome.toLocaleString("en-US")
               : ""
           }
           onChange={(evt) => {
@@ -90,12 +90,11 @@ export default function WhatAboutYou(props: UseUserInformation) {
             );
 
             if (!isNaN(parsedProjectedIncome) && parsedProjectedIncome >= 0)
-              props.setUserInfo({
-                ...props.userInfo,
+              setUser({
+                ...user,
                 projectedIncome: parsedProjectedIncome,
               });
-            else
-              props.setUserInfo({ ...props.userInfo, projectedIncome: null });
+            else setUser({ ...user, projectedIncome: null });
           }}
           startAdornment={<InputAdornment position="start">$</InputAdornment>}
         />
@@ -108,44 +107,40 @@ export default function WhatAboutYou(props: UseUserInformation) {
         <InputLabel htmlFor="family-size">Family Size</InputLabel>
         <Input
           id="family-size"
-          value={
-            props.userInfo.familySize
-              ? props.userInfo.familySize.toString()
-              : ""
-          }
+          value={user.familySize ? user.familySize.toString() : ""}
           onChange={(evt) => {
             const rawFamilySize = evt.target.value;
             const parsedFamilySize = parseInt(rawFamilySize);
 
             if (!isNaN(parsedFamilySize) && parsedFamilySize >= 0) {
               if (parsedFamilySize <= MAX_FAMILY_SIZE)
-                props.setUserInfo({
-                  ...props.userInfo,
+                setUser({
+                  ...user,
                   familySize: parsedFamilySize,
                 });
               else
-                props.setUserInfo({
-                  ...props.userInfo,
+                setUser({
+                  ...user,
                   familySize: MAX_FAMILY_SIZE,
                 });
             } else if (rawFamilySize === "")
-              props.setUserInfo({ ...props.userInfo, familySize: null });
+              setUser({ ...user, familySize: null });
           }}
           onBlur={(evt) => {
             const parsedFamilySize = parseInt(evt.target.value);
 
             if (!isNaN(parsedFamilySize)) {
               if (parsedFamilySize >= 1 && parsedFamilySize <= MAX_FAMILY_SIZE)
-                props.setUserInfo({
-                  ...props.userInfo,
+                setUser({
+                  ...user,
                   familySize: parsedFamilySize,
                 });
               else if (parsedFamilySize > MAX_FAMILY_SIZE)
-                props.setUserInfo({
-                  ...props.userInfo,
+                setUser({
+                  ...user,
                   familySize: MAX_FAMILY_SIZE,
                 });
-            } else props.setUserInfo({ ...props.userInfo, familySize: 1 });
+            } else setUser({ ...user, familySize: 1 });
           }}
         />
       </FormControl>
@@ -157,10 +152,10 @@ export default function WhatAboutYou(props: UseUserInformation) {
         <FormControlLabel
           control={
             <Checkbox
-              checked={props.userInfo.isPregnant}
+              checked={user.isPregnant}
               onChange={(evt) => {
-                props.setUserInfo({
-                  ...props.userInfo,
+                setUser({
+                  ...user,
                   isPregnant: evt.target.checked,
                 });
               }}

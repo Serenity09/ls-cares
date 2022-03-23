@@ -1,17 +1,19 @@
-import { UserInformation } from "../../types/UserInfo";
+import { useUserContext } from "../../user/UserContext";
 
-export default function TheGoodPart(props: UserInformation) {
+export default function TheGoodPart() {
+  const { user } = useUserContext();
+
   return (
     <div>
-      {props.usState +
+      {user.usState +
         " " +
-        props.age +
+        user.age +
         " " +
-        props.projectedIncome +
+        user.projectedIncome +
         " " +
-        props.familySize +
+        user.familySize +
         " " +
-        props.isPregnant}
+        user.isPregnant}
     </div>
   );
 }
