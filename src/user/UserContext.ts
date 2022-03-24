@@ -11,7 +11,7 @@ export class User {
     this.usState = null;
     this.age = null;
     this.projectedIncome = null;
-    this.familySize = null;
+    this.familySize = 1;
     this.isPregnant = undefined;
   }
 }

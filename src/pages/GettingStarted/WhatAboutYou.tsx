@@ -18,9 +18,6 @@ import {
 } from "../../services/usStateService";
 import { useUserContext } from "../../user/UserContext";
 
-const MAX_AGE = 150;
-const MAX_FAMILY_SIZE = 50;
-
 export default function WhatAboutYou() {
   const { user, setUser } = useUserContext();
   const [usStateValue, setUSStateValue] = useState<string | null>(
@@ -64,9 +61,7 @@ export default function WhatAboutYou() {
             const parsedAge = parseInt(evt.target.value);
 
             if (!isNaN(parsedAge)) {
-              if (parsedAge > 0 && parsedAge <= MAX_AGE)
-                setUser({ ...user, age: parsedAge });
-              else if (parsedAge > MAX_AGE) setUser({ ...user, age: MAX_AGE });
+              if (parsedAge > 0) setUser({ ...user, age: parsedAge });
             } else setUser({ ...user, age: null });
           }}
         />
@@ -113,16 +108,10 @@ export default function WhatAboutYou() {
             const parsedFamilySize = parseInt(rawFamilySize);
 
             if (!isNaN(parsedFamilySize) && parsedFamilySize >= 0) {
-              if (parsedFamilySize <= MAX_FAMILY_SIZE)
-                setUser({
-                  ...user,
-                  familySize: parsedFamilySize,
-                });
-              else
-                setUser({
-                  ...user,
-                  familySize: MAX_FAMILY_SIZE,
-                });
+              setUser({
+                ...user,
+                familySize: parsedFamilySize,
+              });
             } else if (rawFamilySize === "")
               setUser({ ...user, familySize: null });
           }}
@@ -130,15 +119,10 @@ export default function WhatAboutYou() {
             const parsedFamilySize = parseInt(evt.target.value);
 
             if (!isNaN(parsedFamilySize)) {
-              if (parsedFamilySize >= 1 && parsedFamilySize <= MAX_FAMILY_SIZE)
+              if (parsedFamilySize >= 1)
                 setUser({
                   ...user,
                   familySize: parsedFamilySize,
-                });
-              else if (parsedFamilySize > MAX_FAMILY_SIZE)
-                setUser({
-                  ...user,
-                  familySize: MAX_FAMILY_SIZE,
                 });
             } else setUser({ ...user, familySize: 1 });
           }}
