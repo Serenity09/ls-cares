@@ -27,6 +27,8 @@ export default function WhatAboutYou() {
       : ""
   );
 
+  //TODO
+  //need to break this up into two parts, first input state and family size, then input below for individual or below + other for family
   return (
     <Box component="form" sx={{ mt: "2.5rem" }}>
       <FormControl className="what-about-you-input-container" fullWidth={true}>
@@ -38,7 +40,7 @@ export default function WhatAboutYou() {
             const usState = getUSStateByName(newValue);
             setUser({
               ...user,
-              usState: usState ? usState.abbreviation : null,
+              usState: usState ? usState.name : null,
             });
           }}
           id="state"
