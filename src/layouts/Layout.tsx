@@ -12,7 +12,7 @@ export default function Layout(props: LayoutProps) {
     <>
       <CssBaseline />
       <AppBar />
-      <Container maxWidth="lg" component="main" sx={{ mt: "2rem" }}>
+      <Container maxWidth="md" component="main" sx={{ mt: "2rem" }}>
         {props.children}
       </Container>
     </>

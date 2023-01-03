@@ -9,6 +9,7 @@ import {
   InputAdornment,
   InputLabel,
   TextField,
+  Typography,
 } from "@mui/material";
 
 import {
@@ -31,7 +32,9 @@ export default function WhatAboutYou() {
   //need to break this up into two parts, first input state and family size, then input below for individual or below + other for family
   return (
     <Box component="form" sx={{ mt: "2.5rem" }}>
-      <FormControl className="what-about-you-input-container" fullWidth={true}>
+      <Typography variant="body1">Info about you is optional and is only used to give you more useful info about common insurance options. Your data is private: nothing is stored, nothing is shared.</Typography>
+
+      <FormControl className="what-about-you-input-container" fullWidth={true} sx={{mt: "1rem"}}>
         <Autocomplete
           value={usStateValue}
           onChange={(event: React.SyntheticEvent, newValue: string | null) => {
@@ -45,7 +48,7 @@ export default function WhatAboutYou() {
           }}
           id="state"
           options={getUSStates().map((state) => state.name)}
-          sx={{ mb: "2rem" }}
+          sx={{ mb: "1rem" }}
           className=""
           renderInput={(params) => <TextField {...params} label="State" />}
         />
