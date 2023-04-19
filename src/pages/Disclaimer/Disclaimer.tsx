@@ -19,6 +19,10 @@ const disclaimerBlockStyle = {
 };
 
 //store user's disclaimer selection in a cookie
+const APP_INFO = {
+  name: "Livestream Cares",
+  acronym: "LSC",
+};
 const VERSION = 1;
 const DISCLAIMER_EXPIRATION = 7; //in days
 
@@ -74,35 +78,33 @@ export default function Disclaimer() {
       <DialogTitle id="alert-dialog-title">Disclaimer</DialogTitle>
       <DialogContent sx={disclaimerContentStyle}>
         <DialogContentText sx={disclaimerBlockStyle}>
-          The information available on Livestream Cares (LSC) may include
-          inaccuracies, omissions, and other errors. LSC only provides
-          information regarding health insurance coverage and is not intended
-          nor implied to substitute professional advice. We are not lawyers and
-          this should not be considered legal advice. We are not doctors and
-          this should not be considered medical advice. Please contact the
-          appropriate professional for any personal, financial, medical, health,
-          or legal decisions.
+          The information available on {APP_INFO.name} ({APP_INFO.acronym}) may
+          include inaccuracies, omissions, and other errors. {APP_INFO.acronym}{" "}
+          only provides information regarding health insurance coverage and is
+          not intended nor implied to substitute professional advice. I am not a
+          lawyer and this should not be considered legal advice. I am not a
+          doctor and this should not be considered medical advice. Please
+          contact the appropriate professional for any personal, financial,
+          medical, health, or legal decisions.
         </DialogContentText>
         <DialogContentText sx={disclaimerBlockStyle}>
-          We hope LSC helps make you a more knowledgeable health insurance
-          consumer. We make no representations about the accuracy, content,
-          reliability, completeness, or legality of this information for any
-          purpose. We cannot guarantee insurance coverage or financial exposure
-          for any health services.
+          I hope {APP_INFO.acronym} helps make you a more knowledgeable health
+          insurance consumer. I make no representations about the accuracy,
+          content, reliability, completeness, or legality of this information
+          for any purpose. I cannot guarantee insurance coverage or financial
+          exposure for any health services.
         </DialogContentText>
         <DialogContentText sx={disclaimerBlockStyle}>
-          In no event shall the owners of or contributors to LSC be liable for
-          direct, indirect, punitive, incidental, special, consequential damages
-          or any damages whatsoever, arising out of or connected with the use of
-          this website or the information contained herein. LSC contains links
-          to third party websites. We cannot control the information provided on
-          those websites and we will not take any responsibility for the
-          information or content thereon.
+          In no event shall the owners of or contributors to {APP_INFO.acronym}{" "}
+          be liable for direct, indirect, punitive, incidental, special,
+          consequential damages or any damages whatsoever, arising out of or
+          connected with the use of this website or the information contained
+          herein. {APP_INFO.acronym} contains links to third party websites. I
+          cannot control the information provided on those websites and I will
+          not take any responsibility for the information or content thereon.
         </DialogContentText>
         <DialogContentText sx={disclaimerBlockStyle}>
-          {
-            "In short, we're trying our best, but we can't deal with legal issues."
-          }
+          {"In short, I'm trying my best, but I can't deal with legal issues."}
         </DialogContentText>
         <DialogContentText sx={disclaimerBlockStyle}>
           Last updated 12/12/2021

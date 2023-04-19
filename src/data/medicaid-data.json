@@ -1,45 +1,41 @@
 {
-  "medicaidTableJson": {
-    "columnNames": [
+  "table": {
+    "columns": [
       {
         "parsedString": "State",
-        "parsedPercent": null,
-        "superScript": null
+        "footnoteID": null
+      },
+      {
+        "parsedString": "Children Medicaid Ages 0-1",
+        "footnoteID": "1"
       },
       {
         "parsedString": "Children Medicaid Ages 1-5",
-        "parsedPercent": null,
-        "superScript": "1"
+        "footnoteID": "1"
       },
       {
         "parsedString": "Children Medicaid Ages 6-18",
-        "parsedPercent": null,
-        "superScript": "1"
+        "footnoteID": "1"
       },
       {
         "parsedString": "Children Separate CHIP",
-        "parsedPercent": null,
-        "superScript": "2"
+        "footnoteID": "2"
       },
       {
         "parsedString": "Pregnant Women Medicaid",
-        "parsedPercent": null,
-        "superScript": null
+        "footnoteID": null
       },
       {
         "parsedString": "Pregnant Women CHIP",
-        "parsedPercent": null,
-        "superScript": "3"
+        "footnoteID": "3"
       },
       {
         "parsedString": "Adults (Medicaid) Parent/ Caretaker",
-        "parsedPercent": null,
-        "superScript": "4"
+        "footnoteID": "4"
       },
       {
         "parsedString": "Adults (Medicaid) Expansion to Adults",
-        "parsedPercent": null,
-        "superScript": null
+        "footnoteID": null
       }
     ],
     "data": [
@@ -47,2397 +43,754 @@
         {
           "parsedString": "Alabama",
           "parsedPercent": null,
-          "superScript": null
+          "footnoteID": null
         },
-        {
-          "parsedString": "141%",
-          "parsedPercent": 1.41,
-          "superScript": null
-        },
-        {
-          "parsedString": "141%",
-          "parsedPercent": 1.41,
-          "superScript": null
-        },
-        {
-          "parsedString": "312%",
-          "parsedPercent": 3.12,
-          "superScript": null
-        },
-        {
-          "parsedString": "141%",
-          "parsedPercent": 1.41,
-          "superScript": null
-        },
-        {
-          "parsedString": "N/A",
-          "parsedPercent": null,
-          "superScript": null
-        },
-        {
-          "parsedString": "13%",
-          "parsedPercent": 0.13,
-          "superScript": null
-        },
-        {
-          "parsedString": "No",
-          "parsedPercent": null,
-          "superScript": null
-        }
+        { "parsedString": "141%", "parsedPercent": 1.41, "footnoteID": null },
+        { "parsedString": "141%", "parsedPercent": 1.41, "footnoteID": null },
+        { "parsedString": "141%", "parsedPercent": 1.41, "footnoteID": null },
+        { "parsedString": "312%", "parsedPercent": 3.12, "footnoteID": null },
+        { "parsedString": "141%", "parsedPercent": 1.41, "footnoteID": null },
+        { "parsedString": "N/A", "parsedPercent": null, "footnoteID": null },
+        { "parsedString": "13%", "parsedPercent": 0.13, "footnoteID": null },
+        { "parsedString": "No", "parsedPercent": null, "footnoteID": null }
       ],
       [
-        {
-          "parsedString": "Alaska",
-          "parsedPercent": null,
-          "superScript": "5"
-        },
-        {
-          "parsedString": "203%",
-          "parsedPercent": 2.03,
-          "superScript": null
-        },
-        {
-          "parsedString": "203%",
-          "parsedPercent": 2.03,
-          "superScript": null
-        },
-        {
-          "parsedString": "203%",
-          "parsedPercent": 2.03,
-          "superScript": null
-        },
-        {
-          "parsedString": "N/A",
-          "parsedPercent": null,
-          "superScript": null
-        },
-        {
-          "parsedString": "200%",
-          "parsedPercent": 2,
-          "superScript": null
-        },
-        {
-          "parsedString": "N/A",
-          "parsedPercent": null,
-          "superScript": null
-        },
+        { "parsedString": "Alaska", "parsedPercent": null, "footnoteID": "5" },
+        { "parsedString": "203%", "parsedPercent": 2.03, "footnoteID": null },
+        { "parsedString": "203%", "parsedPercent": 2.03, "footnoteID": null },
+        { "parsedString": "203%", "parsedPercent": 2.03, "footnoteID": null },
+        { "parsedString": "N/A", "parsedPercent": null, "footnoteID": null },
+        { "parsedString": "200%", "parsedPercent": 2, "footnoteID": null },
+        { "parsedString": "N/A", "parsedPercent": null, "footnoteID": null },
         {
           "parsedString": "131%($)",
           "parsedPercent": 1.31,
-          "superScript": null
+          "footnoteID": null
         },
-        {
-          "parsedString": "133%",
-          "parsedPercent": 1.33,
-          "superScript": null
-        }
+        { "parsedString": "133%", "parsedPercent": 1.33, "footnoteID": null }
       ],
       [
         {
           "parsedString": "Arizona",
           "parsedPercent": null,
-          "superScript": null
+          "footnoteID": null
         },
-        {
-          "parsedString": "147%",
-          "parsedPercent": 1.47,
-          "superScript": null
-        },
-        {
-          "parsedString": "141%",
-          "parsedPercent": 1.41,
-          "superScript": null
-        },
-        {
-          "parsedString": "133%",
-          "parsedPercent": 1.33,
-          "superScript": null
-        },
-        {
-          "parsedString": "200%",
-          "parsedPercent": 2,
-          "superScript": null
-        },
-        {
-          "parsedString": "156%",
-          "parsedPercent": 1.56,
-          "superScript": null
-        },
-        {
-          "parsedString": "N/A",
-          "parsedPercent": null,
-          "superScript": null
-        },
-        {
-          "parsedString": "106%",
-          "parsedPercent": 1.06,
-          "superScript": null
-        },
-        {
-          "parsedString": "133%",
-          "parsedPercent": 1.33,
-          "superScript": null
-        }
+        { "parsedString": "147%", "parsedPercent": 1.47, "footnoteID": null },
+        { "parsedString": "141%", "parsedPercent": 1.41, "footnoteID": null },
+        { "parsedString": "133%", "parsedPercent": 1.33, "footnoteID": null },
+        { "parsedString": "200%", "parsedPercent": 2, "footnoteID": null },
+        { "parsedString": "156%", "parsedPercent": 1.56, "footnoteID": null },
+        { "parsedString": "N/A", "parsedPercent": null, "footnoteID": null },
+        { "parsedString": "106%", "parsedPercent": 1.06, "footnoteID": null },
+        { "parsedString": "133%", "parsedPercent": 1.33, "footnoteID": null }
       ],
       [
         {
           "parsedString": "Arkansas",
           "parsedPercent": null,
-          "superScript": null
+          "footnoteID": null
         },
-        {
-          "parsedString": "142%",
-          "parsedPercent": 1.42,
-          "superScript": null
-        },
-        {
-          "parsedString": "142%",
-          "parsedPercent": 1.42,
-          "superScript": null
-        },
-        {
-          "parsedString": "142%",
-          "parsedPercent": 1.42,
-          "superScript": null
-        },
-        {
-          "parsedString": "211%",
-          "parsedPercent": 2.11,
-          "superScript": null
-        },
-        {
-          "parsedString": "209%",
-          "parsedPercent": 2.09,
-          "superScript": null
-        },
-        {
-          "parsedString": "N/A",
-          "parsedPercent": null,
-          "superScript": null
-        },
-        {
-          "parsedString": "15%($)",
-          "parsedPercent": 0.15,
-          "superScript": null
-        },
-        {
-          "parsedString": "133%",
-          "parsedPercent": 1.33,
-          "superScript": null
-        }
+        { "parsedString": "142%", "parsedPercent": 1.42, "footnoteID": null },
+        { "parsedString": "142%", "parsedPercent": 1.42, "footnoteID": null },
+        { "parsedString": "142%", "parsedPercent": 1.42, "footnoteID": null },
+        { "parsedString": "211%", "parsedPercent": 2.11, "footnoteID": null },
+        { "parsedString": "209%", "parsedPercent": 2.09, "footnoteID": null },
+        { "parsedString": "N/A", "parsedPercent": null, "footnoteID": null },
+        { "parsedString": "15%($)", "parsedPercent": 0.15, "footnoteID": null },
+        { "parsedString": "133%", "parsedPercent": 1.33, "footnoteID": null }
       ],
       [
         {
           "parsedString": "California",
           "parsedPercent": null,
-          "superScript": null
+          "footnoteID": null
         },
-        {
-          "parsedString": "261%",
-          "parsedPercent": 2.61,
-          "superScript": null
-        },
-        {
-          "parsedString": "261%",
-          "parsedPercent": 2.61,
-          "superScript": null
-        },
-        {
-          "parsedString": "261%",
-          "parsedPercent": 2.61,
-          "superScript": null
-        },
+        { "parsedString": "261%", "parsedPercent": 2.61, "footnoteID": null },
+        { "parsedString": "261%", "parsedPercent": 2.61, "footnoteID": null },
+        { "parsedString": "261%", "parsedPercent": 2.61, "footnoteID": null },
         {
           "parsedString": "See note",
           "parsedPercent": null,
-          "superScript": "6"
+          "footnoteID": "6"
         },
-        {
-          "parsedString": "208%",
-          "parsedPercent": 2.08,
-          "superScript": null
-        },
-        {
-          "parsedString": "N/A",
-          "parsedPercent": null,
-          "superScript": null
-        },
-        {
-          "parsedString": "109%",
-          "parsedPercent": 1.09,
-          "superScript": null
-        },
-        {
-          "parsedString": "133%",
-          "parsedPercent": 1.33,
-          "superScript": null
-        }
+        { "parsedString": "208%", "parsedPercent": 2.08, "footnoteID": null },
+        { "parsedString": "N/A", "parsedPercent": null, "footnoteID": null },
+        { "parsedString": "109%", "parsedPercent": 1.09, "footnoteID": null },
+        { "parsedString": "133%", "parsedPercent": 1.33, "footnoteID": null }
       ],
       [
         {
           "parsedString": "Colorado",
           "parsedPercent": null,
-          "superScript": null
+          "footnoteID": null
         },
-        {
-          "parsedString": "142%",
-          "parsedPercent": 1.42,
-          "superScript": null
-        },
-        {
-          "parsedString": "142%",
-          "parsedPercent": 1.42,
-          "superScript": null
-        },
-        {
-          "parsedString": "142%",
-          "parsedPercent": 1.42,
-          "superScript": null
-        },
-        {
-          "parsedString": "260%",
-          "parsedPercent": 2.6,
-          "superScript": null
-        },
-        {
-          "parsedString": "195%",
-          "parsedPercent": 1.95,
-          "superScript": null
-        },
-        {
-          "parsedString": "260%",
-          "parsedPercent": 2.6,
-          "superScript": null
-        },
-        {
-          "parsedString": "68%",
-          "parsedPercent": 0.68,
-          "superScript": null
-        },
-        {
-          "parsedString": "133%",
-          "parsedPercent": 1.33,
-          "superScript": null
-        }
+        { "parsedString": "142%", "parsedPercent": 1.42, "footnoteID": null },
+        { "parsedString": "142%", "parsedPercent": 1.42, "footnoteID": null },
+        { "parsedString": "142%", "parsedPercent": 1.42, "footnoteID": null },
+        { "parsedString": "260%", "parsedPercent": 2.6, "footnoteID": null },
+        { "parsedString": "195%", "parsedPercent": 1.95, "footnoteID": null },
+        { "parsedString": "260%", "parsedPercent": 2.6, "footnoteID": null },
+        { "parsedString": "68%", "parsedPercent": 0.68, "footnoteID": null },
+        { "parsedString": "133%", "parsedPercent": 1.33, "footnoteID": null }
       ],
       [
         {
           "parsedString": "Connecticut",
           "parsedPercent": null,
-          "superScript": null
+          "footnoteID": null
         },
-        {
-          "parsedString": "196%",
-          "parsedPercent": 1.96,
-          "superScript": null
-        },
-        {
-          "parsedString": "196%",
-          "parsedPercent": 1.96,
-          "superScript": null
-        },
-        {
-          "parsedString": "196%",
-          "parsedPercent": 1.96,
-          "superScript": null
-        },
-        {
-          "parsedString": "318%",
-          "parsedPercent": 3.18,
-          "superScript": null
-        },
-        {
-          "parsedString": "258%",
-          "parsedPercent": 2.58,
-          "superScript": null
-        },
-        {
-          "parsedString": "N/A",
-          "parsedPercent": null,
-          "superScript": null
-        },
-        {
-          "parsedString": "155%",
-          "parsedPercent": 1.55,
-          "superScript": null
-        },
-        {
-          "parsedString": "133%",
-          "parsedPercent": 1.33,
-          "superScript": null
-        }
+        { "parsedString": "196%", "parsedPercent": 1.96, "footnoteID": null },
+        { "parsedString": "196%", "parsedPercent": 1.96, "footnoteID": null },
+        { "parsedString": "196%", "parsedPercent": 1.96, "footnoteID": null },
+        { "parsedString": "318%", "parsedPercent": 3.18, "footnoteID": null },
+        { "parsedString": "258%", "parsedPercent": 2.58, "footnoteID": null },
+        { "parsedString": "N/A", "parsedPercent": null, "footnoteID": null },
+        { "parsedString": "155%", "parsedPercent": 1.55, "footnoteID": null },
+        { "parsedString": "133%", "parsedPercent": 1.33, "footnoteID": null }
       ],
       [
         {
           "parsedString": "Delaware",
           "parsedPercent": null,
-          "superScript": null
+          "footnoteID": null
         },
-        {
-          "parsedString": "212%",
-          "parsedPercent": 2.12,
-          "superScript": null
-        },
-        {
-          "parsedString": "142%",
-          "parsedPercent": 1.42,
-          "superScript": null
-        },
-        {
-          "parsedString": "133%",
-          "parsedPercent": 1.33,
-          "superScript": null
-        },
+        { "parsedString": "212%", "parsedPercent": 2.12, "footnoteID": null },
+        { "parsedString": "142%", "parsedPercent": 1.42, "footnoteID": null },
+        { "parsedString": "133%", "parsedPercent": 1.33, "footnoteID": null },
         {
           "parsedString": "212% (1 up to 19)",
           "parsedPercent": 2.12,
-          "superScript": null
+          "footnoteID": null
         },
-        {
-          "parsedString": "212%",
-          "parsedPercent": 2.12,
-          "superScript": null
-        },
-        {
-          "parsedString": "N/A",
-          "parsedPercent": null,
-          "superScript": null
-        },
-        {
-          "parsedString": "87%",
-          "parsedPercent": 0.87,
-          "superScript": null
-        },
-        {
-          "parsedString": "133%",
-          "parsedPercent": 1.33,
-          "superScript": null
-        }
+        { "parsedString": "212%", "parsedPercent": 2.12, "footnoteID": null },
+        { "parsedString": "N/A", "parsedPercent": null, "footnoteID": null },
+        { "parsedString": "87%", "parsedPercent": 0.87, "footnoteID": null },
+        { "parsedString": "133%", "parsedPercent": 1.33, "footnoteID": null }
       ],
       [
         {
           "parsedString": "District of Columbia",
           "parsedPercent": null,
-          "superScript": null
+          "footnoteID": null
         },
-        {
-          "parsedString": "319%",
-          "parsedPercent": 3.19,
-          "superScript": null
-        },
-        {
-          "parsedString": "319%",
-          "parsedPercent": 3.19,
-          "superScript": null
-        },
-        {
-          "parsedString": "319%",
-          "parsedPercent": 3.19,
-          "superScript": null
-        },
-        {
-          "parsedString": "N/A",
-          "parsedPercent": null,
-          "superScript": null
-        },
-        {
-          "parsedString": "319%",
-          "parsedPercent": 3.19,
-          "superScript": null
-        },
-        {
-          "parsedString": "N/A",
-          "parsedPercent": null,
-          "superScript": null
-        },
-        {
-          "parsedString": "216%",
-          "parsedPercent": 2.16,
-          "superScript": null
-        },
-        {
-          "parsedString": "210%",
-          "parsedPercent": 2.1,
-          "superScript": "7"
-        }
+        { "parsedString": "319%", "parsedPercent": 3.19, "footnoteID": null },
+        { "parsedString": "319%", "parsedPercent": 3.19, "footnoteID": null },
+        { "parsedString": "319%", "parsedPercent": 3.19, "footnoteID": null },
+        { "parsedString": "N/A", "parsedPercent": null, "footnoteID": null },
+        { "parsedString": "319%", "parsedPercent": 3.19, "footnoteID": null },
+        { "parsedString": "N/A", "parsedPercent": null, "footnoteID": null },
+        { "parsedString": "216%", "parsedPercent": 2.16, "footnoteID": null },
+        { "parsedString": "210%", "parsedPercent": 2.1, "footnoteID": "7" }
       ],
       [
         {
           "parsedString": "Florida",
           "parsedPercent": null,
-          "superScript": null
+          "footnoteID": null
         },
-        {
-          "parsedString": "206%",
-          "parsedPercent": 2.06,
-          "superScript": null
-        },
-        {
-          "parsedString": "140%",
-          "parsedPercent": 1.4,
-          "superScript": null
-        },
-        {
-          "parsedString": "133%",
-          "parsedPercent": 1.33,
-          "superScript": null
-        },
+        { "parsedString": "206%", "parsedPercent": 2.06, "footnoteID": null },
+        { "parsedString": "140%", "parsedPercent": 1.4, "footnoteID": null },
+        { "parsedString": "133%", "parsedPercent": 1.33, "footnoteID": null },
         {
           "parsedString": "210% (1 up to 19)",
           "parsedPercent": 2.1,
-          "superScript": null
+          "footnoteID": null
         },
-        {
-          "parsedString": "191%",
-          "parsedPercent": 1.91,
-          "superScript": null
-        },
-        {
-          "parsedString": "N/A",
-          "parsedPercent": null,
-          "superScript": null
-        },
-        {
-          "parsedString": "27%($)",
-          "parsedPercent": 0.27,
-          "superScript": null
-        },
-        {
-          "parsedString": "No",
-          "parsedPercent": null,
-          "superScript": "8"
-        }
+        { "parsedString": "191%", "parsedPercent": 1.91, "footnoteID": null },
+        { "parsedString": "N/A", "parsedPercent": null, "footnoteID": null },
+        { "parsedString": "27%($)", "parsedPercent": 0.27, "footnoteID": null },
+        { "parsedString": "No", "parsedPercent": null, "footnoteID": "8" }
       ],
       [
         {
           "parsedString": "Georgia",
           "parsedPercent": null,
-          "superScript": null
+          "footnoteID": null
         },
-        {
-          "parsedString": "205%",
-          "parsedPercent": 2.05,
-          "superScript": null
-        },
-        {
-          "parsedString": "149%",
-          "parsedPercent": 1.49,
-          "superScript": null
-        },
-        {
-          "parsedString": "133%",
-          "parsedPercent": 1.33,
-          "superScript": null
-        },
-        {
-          "parsedString": "247%",
-          "parsedPercent": 2.47,
-          "superScript": null
-        },
-        {
-          "parsedString": "220%",
-          "parsedPercent": 2.2,
-          "superScript": null
-        },
-        {
-          "parsedString": "N/A",
-          "parsedPercent": null,
-          "superScript": null
-        },
-        {
-          "parsedString": "31%($)",
-          "parsedPercent": 0.31,
-          "superScript": null
-        },
-        {
-          "parsedString": "No",
-          "parsedPercent": null,
-          "superScript": null
-        }
+        { "parsedString": "205%", "parsedPercent": 2.05, "footnoteID": null },
+        { "parsedString": "149%", "parsedPercent": 1.49, "footnoteID": null },
+        { "parsedString": "133%", "parsedPercent": 1.33, "footnoteID": null },
+        { "parsedString": "247%", "parsedPercent": 2.47, "footnoteID": null },
+        { "parsedString": "220%", "parsedPercent": 2.2, "footnoteID": null },
+        { "parsedString": "N/A", "parsedPercent": null, "footnoteID": null },
+        { "parsedString": "31%($)", "parsedPercent": 0.31, "footnoteID": null },
+        { "parsedString": "No", "parsedPercent": null, "footnoteID": null }
       ],
       [
-        {
-          "parsedString": "Hawaii",
-          "parsedPercent": null,
-          "superScript": "5"
-        },
-        {
-          "parsedString": "308%",
-          "parsedPercent": 3.08,
-          "superScript": null
-        },
-        {
-          "parsedString": "308%",
-          "parsedPercent": 3.08,
-          "superScript": null
-        },
-        {
-          "parsedString": "308%",
-          "parsedPercent": 3.08,
-          "superScript": null
-        },
-        {
-          "parsedString": "N/A",
-          "parsedPercent": null,
-          "superScript": null
-        },
-        {
-          "parsedString": "191%",
-          "parsedPercent": 1.91,
-          "superScript": null
-        },
-        {
-          "parsedString": "N/A",
-          "parsedPercent": null,
-          "superScript": null
-        },
-        {
-          "parsedString": "105%",
-          "parsedPercent": 1.05,
-          "superScript": null
-        },
-        {
-          "parsedString": "133%",
-          "parsedPercent": 1.33,
-          "superScript": null
-        }
+        { "parsedString": "Hawaii", "parsedPercent": null, "footnoteID": "5" },
+        { "parsedString": "308%", "parsedPercent": 3.08, "footnoteID": null },
+        { "parsedString": "308%", "parsedPercent": 3.08, "footnoteID": null },
+        { "parsedString": "308%", "parsedPercent": 3.08, "footnoteID": null },
+        { "parsedString": "N/A", "parsedPercent": null, "footnoteID": null },
+        { "parsedString": "191%", "parsedPercent": 1.91, "footnoteID": null },
+        { "parsedString": "N/A", "parsedPercent": null, "footnoteID": null },
+        { "parsedString": "105%", "parsedPercent": 1.05, "footnoteID": null },
+        { "parsedString": "133%", "parsedPercent": 1.33, "footnoteID": null }
       ],
       [
-        {
-          "parsedString": "Idaho",
-          "parsedPercent": null,
-          "superScript": null
-        },
-        {
-          "parsedString": "142%",
-          "parsedPercent": 1.42,
-          "superScript": null
-        },
-        {
-          "parsedString": "142%",
-          "parsedPercent": 1.42,
-          "superScript": null
-        },
-        {
-          "parsedString": "133%",
-          "parsedPercent": 1.33,
-          "superScript": null
-        },
-        {
-          "parsedString": "185%",
-          "parsedPercent": 1.85,
-          "superScript": null
-        },
-        {
-          "parsedString": "133%",
-          "parsedPercent": 1.33,
-          "superScript": null
-        },
-        {
-          "parsedString": "N/A",
-          "parsedPercent": null,
-          "superScript": null
-        },
-        {
-          "parsedString": "22%($)",
-          "parsedPercent": 0.22,
-          "superScript": null
-        },
-        {
-          "parsedString": "133%",
-          "parsedPercent": 1.33,
-          "superScript": null
-        }
+        { "parsedString": "Idaho", "parsedPercent": null, "footnoteID": null },
+        { "parsedString": "142%", "parsedPercent": 1.42, "footnoteID": null },
+        { "parsedString": "142%", "parsedPercent": 1.42, "footnoteID": null },
+        { "parsedString": "133%", "parsedPercent": 1.33, "footnoteID": null },
+        { "parsedString": "185%", "parsedPercent": 1.85, "footnoteID": null },
+        { "parsedString": "133%", "parsedPercent": 1.33, "footnoteID": null },
+        { "parsedString": "N/A", "parsedPercent": null, "footnoteID": null },
+        { "parsedString": "22%($)", "parsedPercent": 0.22, "footnoteID": null },
+        { "parsedString": "133%", "parsedPercent": 1.33, "footnoteID": null }
       ],
       [
         {
           "parsedString": "Illinois",
           "parsedPercent": null,
-          "superScript": null
+          "footnoteID": null
         },
-        {
-          "parsedString": "142%",
-          "parsedPercent": 1.42,
-          "superScript": null
-        },
-        {
-          "parsedString": "142%",
-          "parsedPercent": 1.42,
-          "superScript": null
-        },
-        {
-          "parsedString": "142%",
-          "parsedPercent": 1.42,
-          "superScript": null
-        },
-        {
-          "parsedString": "313%",
-          "parsedPercent": 3.13,
-          "superScript": null
-        },
-        {
-          "parsedString": "208%",
-          "parsedPercent": 2.08,
-          "superScript": null
-        },
-        {
-          "parsedString": "N/A",
-          "parsedPercent": null,
-          "superScript": null
-        },
-        {
-          "parsedString": "133%",
-          "parsedPercent": 1.33,
-          "superScript": null
-        },
-        {
-          "parsedString": "133%",
-          "parsedPercent": 1.33,
-          "superScript": null
-        }
+        { "parsedString": "142%", "parsedPercent": 1.42, "footnoteID": null },
+        { "parsedString": "142%", "parsedPercent": 1.42, "footnoteID": null },
+        { "parsedString": "142%", "parsedPercent": 1.42, "footnoteID": null },
+        { "parsedString": "313%", "parsedPercent": 3.13, "footnoteID": null },
+        { "parsedString": "208%", "parsedPercent": 2.08, "footnoteID": null },
+        { "parsedString": "N/A", "parsedPercent": null, "footnoteID": null },
+        { "parsedString": "133%", "parsedPercent": 1.33, "footnoteID": null },
+        { "parsedString": "133%", "parsedPercent": 1.33, "footnoteID": null }
       ],
       [
         {
           "parsedString": "Indiana",
           "parsedPercent": null,
-          "superScript": null
+          "footnoteID": null
         },
-        {
-          "parsedString": "208%",
-          "parsedPercent": 2.08,
-          "superScript": null
-        },
-        {
-          "parsedString": "158%",
-          "parsedPercent": 1.58,
-          "superScript": null
-        },
-        {
-          "parsedString": "158%",
-          "parsedPercent": 1.58,
-          "superScript": null
-        },
-        {
-          "parsedString": "250%",
-          "parsedPercent": 2.5,
-          "superScript": null
-        },
-        {
-          "parsedString": "208%",
-          "parsedPercent": 2.08,
-          "superScript": null
-        },
-        {
-          "parsedString": "N/A",
-          "parsedPercent": null,
-          "superScript": null
-        },
-        {
-          "parsedString": "17%($)",
-          "parsedPercent": 0.17,
-          "superScript": null
-        },
-        {
-          "parsedString": "133%",
-          "parsedPercent": 1.33,
-          "superScript": null
-        }
+        { "parsedString": "208%", "parsedPercent": 2.08, "footnoteID": null },
+        { "parsedString": "158%", "parsedPercent": 1.58, "footnoteID": null },
+        { "parsedString": "158%", "parsedPercent": 1.58, "footnoteID": null },
+        { "parsedString": "250%", "parsedPercent": 2.5, "footnoteID": null },
+        { "parsedString": "208%", "parsedPercent": 2.08, "footnoteID": null },
+        { "parsedString": "N/A", "parsedPercent": null, "footnoteID": null },
+        { "parsedString": "17%($)", "parsedPercent": 0.17, "footnoteID": null },
+        { "parsedString": "133%", "parsedPercent": 1.33, "footnoteID": null }
       ],
       [
-        {
-          "parsedString": "Iowa",
-          "parsedPercent": null,
-          "superScript": null
-        },
-        {
-          "parsedString": "375%",
-          "parsedPercent": 3.75,
-          "superScript": null
-        },
-        {
-          "parsedString": "167%",
-          "parsedPercent": 1.67,
-          "superScript": null
-        },
-        {
-          "parsedString": "167%",
-          "parsedPercent": 1.67,
-          "superScript": null
-        },
+        { "parsedString": "Iowa", "parsedPercent": null, "footnoteID": null },
+        { "parsedString": "375%", "parsedPercent": 3.75, "footnoteID": null },
+        { "parsedString": "167%", "parsedPercent": 1.67, "footnoteID": null },
+        { "parsedString": "167%", "parsedPercent": 1.67, "footnoteID": null },
         {
           "parsedString": "302% (1 up to 19)",
           "parsedPercent": 3.02,
-          "superScript": null
+          "footnoteID": null
         },
-        {
-          "parsedString": "375%",
-          "parsedPercent": 3.75,
-          "superScript": null
-        },
-        {
-          "parsedString": "N/A",
-          "parsedPercent": null,
-          "superScript": null
-        },
-        {
-          "parsedString": "49%($)",
-          "parsedPercent": 0.49,
-          "superScript": null
-        },
-        {
-          "parsedString": "133%",
-          "parsedPercent": 1.33,
-          "superScript": null
-        }
+        { "parsedString": "375%", "parsedPercent": 3.75, "footnoteID": null },
+        { "parsedString": "N/A", "parsedPercent": null, "footnoteID": null },
+        { "parsedString": "49%($)", "parsedPercent": 0.49, "footnoteID": null },
+        { "parsedString": "133%", "parsedPercent": 1.33, "footnoteID": null }
       ],
       [
-        {
-          "parsedString": "Kansas",
-          "parsedPercent": null,
-          "superScript": null
-        },
-        {
-          "parsedString": "166%",
-          "parsedPercent": 1.66,
-          "superScript": null
-        },
-        {
-          "parsedString": "149%",
-          "parsedPercent": 1.49,
-          "superScript": null
-        },
-        {
-          "parsedString": "133%",
-          "parsedPercent": 1.33,
-          "superScript": null
-        },
-        {
-          "parsedString": "225%",
-          "parsedPercent": 2.25,
-          "superScript": null
-        },
-        {
-          "parsedString": "166%",
-          "parsedPercent": 1.66,
-          "superScript": null
-        },
-        {
-          "parsedString": "N/A",
-          "parsedPercent": null,
-          "superScript": null
-        },
-        {
-          "parsedString": "33%",
-          "parsedPercent": 0.33,
-          "superScript": null
-        },
-        {
-          "parsedString": "No",
-          "parsedPercent": null,
-          "superScript": null
-        }
+        { "parsedString": "Kansas", "parsedPercent": null, "footnoteID": null },
+        { "parsedString": "166%", "parsedPercent": 1.66, "footnoteID": null },
+        { "parsedString": "149%", "parsedPercent": 1.49, "footnoteID": null },
+        { "parsedString": "133%", "parsedPercent": 1.33, "footnoteID": null },
+        { "parsedString": "225%", "parsedPercent": 2.25, "footnoteID": null },
+        { "parsedString": "166%", "parsedPercent": 1.66, "footnoteID": null },
+        { "parsedString": "N/A", "parsedPercent": null, "footnoteID": null },
+        { "parsedString": "33%", "parsedPercent": 0.33, "footnoteID": null },
+        { "parsedString": "No", "parsedPercent": null, "footnoteID": null }
       ],
       [
         {
           "parsedString": "Kentucky",
           "parsedPercent": null,
-          "superScript": null
+          "footnoteID": null
         },
-        {
-          "parsedString": "195%",
-          "parsedPercent": 1.95,
-          "superScript": null
-        },
-        {
-          "parsedString": "159%",
-          "parsedPercent": 1.59,
-          "superScript": null
-        },
-        {
-          "parsedString": "159%",
-          "parsedPercent": 1.59,
-          "superScript": null
-        },
-        {
-          "parsedString": "213%",
-          "parsedPercent": 2.13,
-          "superScript": null
-        },
-        {
-          "parsedString": "195%",
-          "parsedPercent": 1.95,
-          "superScript": null
-        },
-        {
-          "parsedString": "N/A",
-          "parsedPercent": null,
-          "superScript": null
-        },
-        {
-          "parsedString": "22%($)",
-          "parsedPercent": 0.22,
-          "superScript": null
-        },
-        {
-          "parsedString": "133%",
-          "parsedPercent": 1.33,
-          "superScript": null
-        }
+        { "parsedString": "195%", "parsedPercent": 1.95, "footnoteID": null },
+        { "parsedString": "159%", "parsedPercent": 1.59, "footnoteID": null },
+        { "parsedString": "159%", "parsedPercent": 1.59, "footnoteID": null },
+        { "parsedString": "213%", "parsedPercent": 2.13, "footnoteID": null },
+        { "parsedString": "195%", "parsedPercent": 1.95, "footnoteID": null },
+        { "parsedString": "N/A", "parsedPercent": null, "footnoteID": null },
+        { "parsedString": "22%($)", "parsedPercent": 0.22, "footnoteID": null },
+        { "parsedString": "133%", "parsedPercent": 1.33, "footnoteID": null }
       ],
       [
         {
           "parsedString": "Louisiana",
           "parsedPercent": null,
-          "superScript": null
+          "footnoteID": null
         },
-        {
-          "parsedString": "212%",
-          "parsedPercent": 2.12,
-          "superScript": null
-        },
-        {
-          "parsedString": "212%",
-          "parsedPercent": 2.12,
-          "superScript": null
-        },
-        {
-          "parsedString": "212%",
-          "parsedPercent": 2.12,
-          "superScript": null
-        },
-        {
-          "parsedString": "250%",
-          "parsedPercent": 2.5,
-          "superScript": null
-        },
-        {
-          "parsedString": "133%",
-          "parsedPercent": 1.33,
-          "superScript": null
-        },
-        {
-          "parsedString": "N/A",
-          "parsedPercent": null,
-          "superScript": null
-        },
-        {
-          "parsedString": "19%",
-          "parsedPercent": 0.19,
-          "superScript": null
-        },
-        {
-          "parsedString": "133%",
-          "parsedPercent": 1.33,
-          "superScript": null
-        }
+        { "parsedString": "212%", "parsedPercent": 2.12, "footnoteID": null },
+        { "parsedString": "212%", "parsedPercent": 2.12, "footnoteID": null },
+        { "parsedString": "212%", "parsedPercent": 2.12, "footnoteID": null },
+        { "parsedString": "250%", "parsedPercent": 2.5, "footnoteID": null },
+        { "parsedString": "133%", "parsedPercent": 1.33, "footnoteID": null },
+        { "parsedString": "N/A", "parsedPercent": null, "footnoteID": null },
+        { "parsedString": "19%", "parsedPercent": 0.19, "footnoteID": null },
+        { "parsedString": "133%", "parsedPercent": 1.33, "footnoteID": null }
       ],
       [
-        {
-          "parsedString": "Maine",
-          "parsedPercent": null,
-          "superScript": null
-        },
-        {
-          "parsedString": "191%",
-          "parsedPercent": 1.91,
-          "superScript": null
-        },
-        {
-          "parsedString": "157%",
-          "parsedPercent": 1.57,
-          "superScript": null
-        },
-        {
-          "parsedString": "157%",
-          "parsedPercent": 1.57,
-          "superScript": null
-        },
-        {
-          "parsedString": "208%",
-          "parsedPercent": 2.08,
-          "superScript": null
-        },
-        {
-          "parsedString": "209%",
-          "parsedPercent": 2.09,
-          "superScript": null
-        },
-        {
-          "parsedString": "N/A",
-          "parsedPercent": null,
-          "superScript": null
-        },
-        {
-          "parsedString": "100%",
-          "parsedPercent": 1,
-          "superScript": null
-        },
-        {
-          "parsedString": "133%",
-          "parsedPercent": 1.33,
-          "superScript": "7"
-        }
+        { "parsedString": "Maine", "parsedPercent": null, "footnoteID": null },
+        { "parsedString": "191%", "parsedPercent": 1.91, "footnoteID": null },
+        { "parsedString": "157%", "parsedPercent": 1.57, "footnoteID": null },
+        { "parsedString": "157%", "parsedPercent": 1.57, "footnoteID": null },
+        { "parsedString": "208%", "parsedPercent": 2.08, "footnoteID": null },
+        { "parsedString": "209%", "parsedPercent": 2.09, "footnoteID": null },
+        { "parsedString": "N/A", "parsedPercent": null, "footnoteID": null },
+        { "parsedString": "100%", "parsedPercent": 1, "footnoteID": null },
+        { "parsedString": "133%", "parsedPercent": 1.33, "footnoteID": "7" }
       ],
       [
         {
           "parsedString": "Maryland",
           "parsedPercent": null,
-          "superScript": null
+          "footnoteID": null
         },
-        {
-          "parsedString": "317%",
-          "parsedPercent": 3.17,
-          "superScript": null
-        },
-        {
-          "parsedString": "317%",
-          "parsedPercent": 3.17,
-          "superScript": null
-        },
-        {
-          "parsedString": "317%",
-          "parsedPercent": 3.17,
-          "superScript": null
-        },
-        {
-          "parsedString": "N/A",
-          "parsedPercent": null,
-          "superScript": null
-        },
-        {
-          "parsedString": "259%",
-          "parsedPercent": 2.59,
-          "superScript": null
-        },
-        {
-          "parsedString": "N/A",
-          "parsedPercent": null,
-          "superScript": null
-        },
-        {
-          "parsedString": "123%",
-          "parsedPercent": 1.23,
-          "superScript": null
-        },
-        {
-          "parsedString": "133%",
-          "parsedPercent": 1.33,
-          "superScript": null
-        }
+        { "parsedString": "317%", "parsedPercent": 3.17, "footnoteID": null },
+        { "parsedString": "317%", "parsedPercent": 3.17, "footnoteID": null },
+        { "parsedString": "317%", "parsedPercent": 3.17, "footnoteID": null },
+        { "parsedString": "N/A", "parsedPercent": null, "footnoteID": null },
+        { "parsedString": "259%", "parsedPercent": 2.59, "footnoteID": null },
+        { "parsedString": "N/A", "parsedPercent": null, "footnoteID": null },
+        { "parsedString": "123%", "parsedPercent": 1.23, "footnoteID": null },
+        { "parsedString": "133%", "parsedPercent": 1.33, "footnoteID": null }
       ],
       [
         {
           "parsedString": "Massachusetts",
           "parsedPercent": null,
-          "superScript": null
+          "footnoteID": null
         },
-        {
-          "parsedString": "200%",
-          "parsedPercent": 2,
-          "superScript": null
-        },
-        {
-          "parsedString": "150%",
-          "parsedPercent": 1.5,
-          "superScript": null
-        },
-        {
-          "parsedString": "150%",
-          "parsedPercent": 1.5,
-          "superScript": null
-        },
-        {
-          "parsedString": "300%",
-          "parsedPercent": 3,
-          "superScript": null
-        },
-        {
-          "parsedString": "200%",
-          "parsedPercent": 2,
-          "superScript": null
-        },
-        {
-          "parsedString": "N/A",
-          "parsedPercent": null,
-          "superScript": null
-        },
-        {
-          "parsedString": "133%",
-          "parsedPercent": 1.33,
-          "superScript": null
-        },
-        {
-          "parsedString": "133%",
-          "parsedPercent": 1.33,
-          "superScript": "7"
-        }
+        { "parsedString": "200%", "parsedPercent": 2, "footnoteID": null },
+        { "parsedString": "150%", "parsedPercent": 1.5, "footnoteID": null },
+        { "parsedString": "150%", "parsedPercent": 1.5, "footnoteID": null },
+        { "parsedString": "300%", "parsedPercent": 3, "footnoteID": null },
+        { "parsedString": "200%", "parsedPercent": 2, "footnoteID": null },
+        { "parsedString": "N/A", "parsedPercent": null, "footnoteID": null },
+        { "parsedString": "133%", "parsedPercent": 1.33, "footnoteID": null },
+        { "parsedString": "133%", "parsedPercent": 1.33, "footnoteID": "7" }
       ],
       [
         {
           "parsedString": "Michigan",
           "parsedPercent": null,
-          "superScript": null
+          "footnoteID": null
         },
-        {
-          "parsedString": "212%",
-          "parsedPercent": 2.12,
-          "superScript": null
-        },
-        {
-          "parsedString": "212%",
-          "parsedPercent": 2.12,
-          "superScript": null
-        },
-        {
-          "parsedString": "212%",
-          "parsedPercent": 2.12,
-          "superScript": null
-        },
-        {
-          "parsedString": "N/A",
-          "parsedPercent": null,
-          "superScript": null
-        },
-        {
-          "parsedString": "195%",
-          "parsedPercent": 1.95,
-          "superScript": null
-        },
-        {
-          "parsedString": "N/A",
-          "parsedPercent": null,
-          "superScript": null
-        },
-        {
-          "parsedString": "54%",
-          "parsedPercent": 0.54,
-          "superScript": null
-        },
-        {
-          "parsedString": "133%",
-          "parsedPercent": 1.33,
-          "superScript": null
-        }
+        { "parsedString": "212%", "parsedPercent": 2.12, "footnoteID": null },
+        { "parsedString": "212%", "parsedPercent": 2.12, "footnoteID": null },
+        { "parsedString": "212%", "parsedPercent": 2.12, "footnoteID": null },
+        { "parsedString": "N/A", "parsedPercent": null, "footnoteID": null },
+        { "parsedString": "195%", "parsedPercent": 1.95, "footnoteID": null },
+        { "parsedString": "N/A", "parsedPercent": null, "footnoteID": null },
+        { "parsedString": "54%", "parsedPercent": 0.54, "footnoteID": null },
+        { "parsedString": "133%", "parsedPercent": 1.33, "footnoteID": null }
       ],
       [
         {
           "parsedString": "Minnesota",
           "parsedPercent": null,
-          "superScript": null
+          "footnoteID": null
         },
-        {
-          "parsedString": "283%",
-          "parsedPercent": 2.83,
-          "superScript": "10"
-        },
-        {
-          "parsedString": "275%",
-          "parsedPercent": 2.75,
-          "superScript": null
-        },
-        {
-          "parsedString": "275%",
-          "parsedPercent": 2.75,
-          "superScript": null
-        },
-        {
-          "parsedString": "N/A",
-          "parsedPercent": null,
-          "superScript": null
-        },
-        {
-          "parsedString": "278%",
-          "parsedPercent": 2.78,
-          "superScript": null
-        },
-        {
-          "parsedString": "N/A",
-          "parsedPercent": null,
-          "superScript": null
-        },
-        {
-          "parsedString": "133%",
-          "parsedPercent": 1.33,
-          "superScript": null
-        },
-        {
-          "parsedString": "200%",
-          "parsedPercent": 2,
-          "superScript": "11"
-        }
+        { "parsedString": "283%", "parsedPercent": 2.83, "footnoteID": "10" },
+        { "parsedString": "275%", "parsedPercent": 2.75, "footnoteID": null },
+        { "parsedString": "275%", "parsedPercent": 2.75, "footnoteID": null },
+        { "parsedString": "N/A", "parsedPercent": null, "footnoteID": null },
+        { "parsedString": "278%", "parsedPercent": 2.78, "footnoteID": null },
+        { "parsedString": "N/A", "parsedPercent": null, "footnoteID": null },
+        { "parsedString": "133%", "parsedPercent": 1.33, "footnoteID": null },
+        { "parsedString": "200%", "parsedPercent": 2, "footnoteID": "11" }
       ],
       [
         {
           "parsedString": "Mississippi",
           "parsedPercent": null,
-          "superScript": null
+          "footnoteID": null
         },
-        {
-          "parsedString": "194%",
-          "parsedPercent": 1.94,
-          "superScript": null
-        },
-        {
-          "parsedString": "143%",
-          "parsedPercent": 1.43,
-          "superScript": null
-        },
-        {
-          "parsedString": "133%",
-          "parsedPercent": 1.33,
-          "superScript": null
-        },
-        {
-          "parsedString": "209%",
-          "parsedPercent": 2.09,
-          "superScript": null
-        },
-        {
-          "parsedString": "194%",
-          "parsedPercent": 1.94,
-          "superScript": null
-        },
-        {
-          "parsedString": "N/A",
-          "parsedPercent": null,
-          "superScript": null
-        },
-        {
-          "parsedString": "21%($)",
-          "parsedPercent": 0.21,
-          "superScript": null
-        },
-        {
-          "parsedString": "No",
-          "parsedPercent": null,
-          "superScript": null
-        }
+        { "parsedString": "194%", "parsedPercent": 1.94, "footnoteID": null },
+        { "parsedString": "143%", "parsedPercent": 1.43, "footnoteID": null },
+        { "parsedString": "133%", "parsedPercent": 1.33, "footnoteID": null },
+        { "parsedString": "209%", "parsedPercent": 2.09, "footnoteID": null },
+        { "parsedString": "194%", "parsedPercent": 1.94, "footnoteID": null },
+        { "parsedString": "N/A", "parsedPercent": null, "footnoteID": null },
+        { "parsedString": "21%($)", "parsedPercent": 0.21, "footnoteID": null },
+        { "parsedString": "No", "parsedPercent": null, "footnoteID": null }
       ],
       [
         {
           "parsedString": "Missouri",
           "parsedPercent": null,
-          "superScript": null
+          "footnoteID": null
         },
-        {
-          "parsedString": "196%",
-          "parsedPercent": 1.96,
-          "superScript": null
-        },
-        {
-          "parsedString": "150%",
-          "parsedPercent": 1.5,
-          "superScript": null
-        },
-        {
-          "parsedString": "150%",
-          "parsedPercent": 1.5,
-          "superScript": null
-        },
-        {
-          "parsedString": "300%",
-          "parsedPercent": 3,
-          "superScript": null
-        },
-        {
-          "parsedString": "196%",
-          "parsedPercent": 1.96,
-          "superScript": null
-        },
-        {
-          "parsedString": "300%",
-          "parsedPercent": 3,
-          "superScript": null
-        },
-        {
-          "parsedString": "17%",
-          "parsedPercent": 0.17,
-          "superScript": "9"
-        },
-        {
-          "parsedString": "133%",
-          "parsedPercent": 1.33,
-          "superScript": null
-        }
+        { "parsedString": "196%", "parsedPercent": 1.96, "footnoteID": null },
+        { "parsedString": "150%", "parsedPercent": 1.5, "footnoteID": null },
+        { "parsedString": "150%", "parsedPercent": 1.5, "footnoteID": null },
+        { "parsedString": "300%", "parsedPercent": 3, "footnoteID": null },
+        { "parsedString": "196%", "parsedPercent": 1.96, "footnoteID": null },
+        { "parsedString": "300%", "parsedPercent": 3, "footnoteID": null },
+        { "parsedString": "17%", "parsedPercent": 0.17, "footnoteID": "9" },
+        { "parsedString": "133%", "parsedPercent": 1.33, "footnoteID": null }
       ],
       [
         {
           "parsedString": "Montana",
           "parsedPercent": null,
-          "superScript": null
+          "footnoteID": null
         },
-        {
-          "parsedString": "143%",
-          "parsedPercent": 1.43,
-          "superScript": null
-        },
-        {
-          "parsedString": "143%",
-          "parsedPercent": 1.43,
-          "superScript": null
-        },
-        {
-          "parsedString": "143%",
-          "parsedPercent": 1.43,
-          "superScript": null
-        },
-        {
-          "parsedString": "261%",
-          "parsedPercent": 2.61,
-          "superScript": null
-        },
-        {
-          "parsedString": "157%",
-          "parsedPercent": 1.57,
-          "superScript": null
-        },
-        {
-          "parsedString": "N/A",
-          "parsedPercent": null,
-          "superScript": null
-        },
-        {
-          "parsedString": "24%",
-          "parsedPercent": 0.24,
-          "superScript": null
-        },
-        {
-          "parsedString": "133%",
-          "parsedPercent": 1.33,
-          "superScript": null
-        }
+        { "parsedString": "143%", "parsedPercent": 1.43, "footnoteID": null },
+        { "parsedString": "143%", "parsedPercent": 1.43, "footnoteID": null },
+        { "parsedString": "143%", "parsedPercent": 1.43, "footnoteID": null },
+        { "parsedString": "261%", "parsedPercent": 2.61, "footnoteID": null },
+        { "parsedString": "157%", "parsedPercent": 1.57, "footnoteID": null },
+        { "parsedString": "N/A", "parsedPercent": null, "footnoteID": null },
+        { "parsedString": "24%", "parsedPercent": 0.24, "footnoteID": null },
+        { "parsedString": "133%", "parsedPercent": 1.33, "footnoteID": null }
       ],
       [
         {
           "parsedString": "Nebraska",
           "parsedPercent": null,
-          "superScript": null
+          "footnoteID": null
         },
-        {
-          "parsedString": "213%",
-          "parsedPercent": 2.13,
-          "superScript": null
-        },
-        {
-          "parsedString": "213%",
-          "parsedPercent": 2.13,
-          "superScript": null
-        },
-        {
-          "parsedString": "213%",
-          "parsedPercent": 2.13,
-          "superScript": null
-        },
-        {
-          "parsedString": "N/A",
-          "parsedPercent": null,
-          "superScript": null
-        },
-        {
-          "parsedString": "194%",
-          "parsedPercent": 1.94,
-          "superScript": null
-        },
-        {
-          "parsedString": "N/A",
-          "parsedPercent": null,
-          "superScript": null
-        },
-        {
-          "parsedString": "58%",
-          "parsedPercent": 0.58,
-          "superScript": null
-        },
-        {
-          "parsedString": "133%",
-          "parsedPercent": 1.33,
-          "superScript": null
-        }
+        { "parsedString": "213%", "parsedPercent": 2.13, "footnoteID": null },
+        { "parsedString": "213%", "parsedPercent": 2.13, "footnoteID": null },
+        { "parsedString": "213%", "parsedPercent": 2.13, "footnoteID": null },
+        { "parsedString": "N/A", "parsedPercent": null, "footnoteID": null },
+        { "parsedString": "194%", "parsedPercent": 1.94, "footnoteID": null },
+        { "parsedString": "N/A", "parsedPercent": null, "footnoteID": null },
+        { "parsedString": "58%", "parsedPercent": 0.58, "footnoteID": null },
+        { "parsedString": "133%", "parsedPercent": 1.33, "footnoteID": null }
       ],
       [
-        {
-          "parsedString": "Nevada",
-          "parsedPercent": null,
-          "superScript": null
-        },
-        {
-          "parsedString": "160%",
-          "parsedPercent": 1.6,
-          "superScript": null
-        },
-        {
-          "parsedString": "160%",
-          "parsedPercent": 1.6,
-          "superScript": null
-        },
-        {
-          "parsedString": "133%",
-          "parsedPercent": 1.33,
-          "superScript": null
-        },
-        {
-          "parsedString": "200%",
-          "parsedPercent": 2,
-          "superScript": null
-        },
-        {
-          "parsedString": "160%",
-          "parsedPercent": 1.6,
-          "superScript": null
-        },
-        {
-          "parsedString": "N/A",
-          "parsedPercent": null,
-          "superScript": null
-        },
-        {
-          "parsedString": "30%($)",
-          "parsedPercent": 0.3,
-          "superScript": null
-        },
-        {
-          "parsedString": "133%",
-          "parsedPercent": 1.33,
-          "superScript": null
-        }
+        { "parsedString": "Nevada", "parsedPercent": null, "footnoteID": null },
+        { "parsedString": "160%", "parsedPercent": 1.6, "footnoteID": null },
+        { "parsedString": "160%", "parsedPercent": 1.6, "footnoteID": null },
+        { "parsedString": "133%", "parsedPercent": 1.33, "footnoteID": null },
+        { "parsedString": "200%", "parsedPercent": 2, "footnoteID": null },
+        { "parsedString": "160%", "parsedPercent": 1.6, "footnoteID": null },
+        { "parsedString": "N/A", "parsedPercent": null, "footnoteID": null },
+        { "parsedString": "30%($)", "parsedPercent": 0.3, "footnoteID": null },
+        { "parsedString": "133%", "parsedPercent": 1.33, "footnoteID": null }
       ],
       [
         {
           "parsedString": "New Hampshire",
           "parsedPercent": null,
-          "superScript": null
+          "footnoteID": null
         },
-        {
-          "parsedString": "318%",
-          "parsedPercent": 3.18,
-          "superScript": null
-        },
-        {
-          "parsedString": "318%",
-          "parsedPercent": 3.18,
-          "superScript": null
-        },
-        {
-          "parsedString": "318%",
-          "parsedPercent": 3.18,
-          "superScript": null
-        },
-        {
-          "parsedString": "N/A",
-          "parsedPercent": null,
-          "superScript": null
-        },
-        {
-          "parsedString": "196%",
-          "parsedPercent": 1.96,
-          "superScript": null
-        },
-        {
-          "parsedString": "N/A",
-          "parsedPercent": null,
-          "superScript": null
-        },
-        {
-          "parsedString": "62%($)",
-          "parsedPercent": 0.62,
-          "superScript": null
-        },
-        {
-          "parsedString": "133%",
-          "parsedPercent": 1.33,
-          "superScript": null
-        }
+        { "parsedString": "318%", "parsedPercent": 3.18, "footnoteID": null },
+        { "parsedString": "318%", "parsedPercent": 3.18, "footnoteID": null },
+        { "parsedString": "318%", "parsedPercent": 3.18, "footnoteID": null },
+        { "parsedString": "N/A", "parsedPercent": null, "footnoteID": null },
+        { "parsedString": "196%", "parsedPercent": 1.96, "footnoteID": null },
+        { "parsedString": "N/A", "parsedPercent": null, "footnoteID": null },
+        { "parsedString": "62%($)", "parsedPercent": 0.62, "footnoteID": null },
+        { "parsedString": "133%", "parsedPercent": 1.33, "footnoteID": null }
       ],
       [
         {
           "parsedString": "New Jersey",
           "parsedPercent": null,
-          "superScript": null
+          "footnoteID": null
         },
-        {
-          "parsedString": "194%",
-          "parsedPercent": 1.94,
-          "superScript": null
-        },
-        {
-          "parsedString": "142%",
-          "parsedPercent": 1.42,
-          "superScript": null
-        },
-        {
-          "parsedString": "142%",
-          "parsedPercent": 1.42,
-          "superScript": null
-        },
-        {
-          "parsedString": "350%",
-          "parsedPercent": 3.5,
-          "superScript": null
-        },
-        {
-          "parsedString": "194%",
-          "parsedPercent": 1.94,
-          "superScript": null
-        },
-        {
-          "parsedString": "200%",
-          "parsedPercent": 2,
-          "superScript": null
-        },
-        {
-          "parsedString": "29%($)",
-          "parsedPercent": 0.29,
-          "superScript": null
-        },
-        {
-          "parsedString": "133%",
-          "parsedPercent": 1.33,
-          "superScript": null
-        }
+        { "parsedString": "194%", "parsedPercent": 1.94, "footnoteID": null },
+        { "parsedString": "142%", "parsedPercent": 1.42, "footnoteID": null },
+        { "parsedString": "142%", "parsedPercent": 1.42, "footnoteID": null },
+        { "parsedString": "350%", "parsedPercent": 3.5, "footnoteID": null },
+        { "parsedString": "194%", "parsedPercent": 1.94, "footnoteID": null },
+        { "parsedString": "200%", "parsedPercent": 2, "footnoteID": null },
+        { "parsedString": "29%($)", "parsedPercent": 0.29, "footnoteID": null },
+        { "parsedString": "133%", "parsedPercent": 1.33, "footnoteID": null }
       ],
       [
         {
           "parsedString": "New Mexico",
           "parsedPercent": null,
-          "superScript": null
+          "footnoteID": null
         },
-        {
-          "parsedString": "300%",
-          "parsedPercent": 3,
-          "superScript": null
-        },
-        {
-          "parsedString": "300%",
-          "parsedPercent": 3,
-          "superScript": null
-        },
-        {
-          "parsedString": "240%",
-          "parsedPercent": 2.4,
-          "superScript": null
-        },
-        {
-          "parsedString": "N/A",
-          "parsedPercent": null,
-          "superScript": null
-        },
-        {
-          "parsedString": "250%",
-          "parsedPercent": 2.5,
-          "superScript": null
-        },
-        {
-          "parsedString": "N/A",
-          "parsedPercent": null,
-          "superScript": null
-        },
-        {
-          "parsedString": "42%($)",
-          "parsedPercent": 0.42,
-          "superScript": null
-        },
-        {
-          "parsedString": "133%",
-          "parsedPercent": 1.33,
-          "superScript": null
-        }
+        { "parsedString": "300%", "parsedPercent": 3, "footnoteID": null },
+        { "parsedString": "300%", "parsedPercent": 3, "footnoteID": null },
+        { "parsedString": "240%", "parsedPercent": 2.4, "footnoteID": null },
+        { "parsedString": "N/A", "parsedPercent": null, "footnoteID": null },
+        { "parsedString": "250%", "parsedPercent": 2.5, "footnoteID": null },
+        { "parsedString": "N/A", "parsedPercent": null, "footnoteID": null },
+        { "parsedString": "42%($)", "parsedPercent": 0.42, "footnoteID": null },
+        { "parsedString": "133%", "parsedPercent": 1.33, "footnoteID": null }
       ],
       [
         {
           "parsedString": "New York",
           "parsedPercent": null,
-          "superScript": null
+          "footnoteID": null
         },
-        {
-          "parsedString": "218%",
-          "parsedPercent": 2.18,
-          "superScript": null
-        },
-        {
-          "parsedString": "149%",
-          "parsedPercent": 1.49,
-          "superScript": null
-        },
-        {
-          "parsedString": "149%",
-          "parsedPercent": 1.49,
-          "superScript": null
-        },
-        {
-          "parsedString": "400%",
-          "parsedPercent": 4,
-          "superScript": null
-        },
-        {
-          "parsedString": "218%",
-          "parsedPercent": 2.18,
-          "superScript": null
-        },
-        {
-          "parsedString": "N/A",
-          "parsedPercent": null,
-          "superScript": null
-        },
-        {
-          "parsedString": "133%",
-          "parsedPercent": 1.33,
-          "superScript": null
-        },
-        {
-          "parsedString": "200%",
-          "parsedPercent": 2,
-          "superScript": "11"
-        }
+        { "parsedString": "218%", "parsedPercent": 2.18, "footnoteID": null },
+        { "parsedString": "149%", "parsedPercent": 1.49, "footnoteID": null },
+        { "parsedString": "149%", "parsedPercent": 1.49, "footnoteID": null },
+        { "parsedString": "400%", "parsedPercent": 4, "footnoteID": null },
+        { "parsedString": "218%", "parsedPercent": 2.18, "footnoteID": null },
+        { "parsedString": "N/A", "parsedPercent": null, "footnoteID": null },
+        { "parsedString": "133%", "parsedPercent": 1.33, "footnoteID": null },
+        { "parsedString": "200%", "parsedPercent": 2, "footnoteID": "11" }
       ],
       [
         {
           "parsedString": "North Carolina",
           "parsedPercent": null,
-          "superScript": null
+          "footnoteID": null
         },
-        {
-          "parsedString": "210%",
-          "parsedPercent": 2.1,
-          "superScript": null
-        },
-        {
-          "parsedString": "210%",
-          "parsedPercent": 2.1,
-          "superScript": null
-        },
-        {
-          "parsedString": "133%",
-          "parsedPercent": 1.33,
-          "superScript": null
-        },
+        { "parsedString": "210%", "parsedPercent": 2.1, "footnoteID": null },
+        { "parsedString": "210%", "parsedPercent": 2.1, "footnoteID": null },
+        { "parsedString": "133%", "parsedPercent": 1.33, "footnoteID": null },
         {
           "parsedString": "211% (6 up to 19)",
           "parsedPercent": 2.11,
-          "superScript": null
+          "footnoteID": null
         },
-        {
-          "parsedString": "196%",
-          "parsedPercent": 1.96,
-          "superScript": null
-        },
-        {
-          "parsedString": "N/A",
-          "parsedPercent": null,
-          "superScript": null
-        },
-        {
-          "parsedString": "40%($)",
-          "parsedPercent": 0.4,
-          "superScript": null
-        },
-        {
-          "parsedString": "No",
-          "parsedPercent": null,
-          "superScript": "8"
-        }
+        { "parsedString": "196%", "parsedPercent": 1.96, "footnoteID": null },
+        { "parsedString": "N/A", "parsedPercent": null, "footnoteID": null },
+        { "parsedString": "40%($)", "parsedPercent": 0.4, "footnoteID": null },
+        { "parsedString": "No", "parsedPercent": null, "footnoteID": "8" }
       ],
       [
         {
           "parsedString": "North Dakota",
           "parsedPercent": null,
-          "superScript": null
+          "footnoteID": null
         },
-        {
-          "parsedString": "170%",
-          "parsedPercent": 1.7,
-          "superScript": null
-        },
-        {
-          "parsedString": "170%",
-          "parsedPercent": 1.7,
-          "superScript": null
-        },
-        {
-          "parsedString": "170%",
-          "parsedPercent": 1.7,
-          "superScript": null
-        },
-        {
-          "parsedString": "N/A",
-          "parsedPercent": null,
-          "superScript": null
-        },
-        {
-          "parsedString": "157%",
-          "parsedPercent": 1.57,
-          "superScript": null
-        },
-        {
-          "parsedString": "N/A",
-          "parsedPercent": null,
-          "superScript": null
-        },
-        {
-          "parsedString": "48%($)",
-          "parsedPercent": 0.48,
-          "superScript": null
-        },
-        {
-          "parsedString": "133%",
-          "parsedPercent": 1.33,
-          "superScript": null
-        }
+        { "parsedString": "170%", "parsedPercent": 1.7, "footnoteID": null },
+        { "parsedString": "170%", "parsedPercent": 1.7, "footnoteID": null },
+        { "parsedString": "170%", "parsedPercent": 1.7, "footnoteID": null },
+        { "parsedString": "N/A", "parsedPercent": null, "footnoteID": null },
+        { "parsedString": "157%", "parsedPercent": 1.57, "footnoteID": null },
+        { "parsedString": "N/A", "parsedPercent": null, "footnoteID": null },
+        { "parsedString": "48%($)", "parsedPercent": 0.48, "footnoteID": null },
+        { "parsedString": "133%", "parsedPercent": 1.33, "footnoteID": null }
       ],
       [
-        {
-          "parsedString": "Ohio",
-          "parsedPercent": null,
-          "superScript": null
-        },
-        {
-          "parsedString": "206%",
-          "parsedPercent": 2.06,
-          "superScript": null
-        },
-        {
-          "parsedString": "206%",
-          "parsedPercent": 2.06,
-          "superScript": null
-        },
-        {
-          "parsedString": "206%",
-          "parsedPercent": 2.06,
-          "superScript": null
-        },
-        {
-          "parsedString": "N/A",
-          "parsedPercent": null,
-          "superScript": null
-        },
-        {
-          "parsedString": "200%",
-          "parsedPercent": 2,
-          "superScript": null
-        },
-        {
-          "parsedString": "N/A",
-          "parsedPercent": null,
-          "superScript": null
-        },
-        {
-          "parsedString": "90%",
-          "parsedPercent": 0.9,
-          "superScript": null
-        },
-        {
-          "parsedString": "133%",
-          "parsedPercent": 1.33,
-          "superScript": null
-        }
+        { "parsedString": "Ohio", "parsedPercent": null, "footnoteID": null },
+        { "parsedString": "206%", "parsedPercent": 2.06, "footnoteID": null },
+        { "parsedString": "206%", "parsedPercent": 2.06, "footnoteID": null },
+        { "parsedString": "206%", "parsedPercent": 2.06, "footnoteID": null },
+        { "parsedString": "N/A", "parsedPercent": null, "footnoteID": null },
+        { "parsedString": "200%", "parsedPercent": 2, "footnoteID": null },
+        { "parsedString": "N/A", "parsedPercent": null, "footnoteID": null },
+        { "parsedString": "90%", "parsedPercent": 0.9, "footnoteID": null },
+        { "parsedString": "133%", "parsedPercent": 1.33, "footnoteID": null }
       ],
       [
         {
           "parsedString": "Oklahoma",
           "parsedPercent": null,
-          "superScript": null
+          "footnoteID": null
         },
-        {
-          "parsedString": "205%",
-          "parsedPercent": 2.05,
-          "superScript": null
-        },
-        {
-          "parsedString": "205%",
-          "parsedPercent": 2.05,
-          "superScript": null
-        },
-        {
-          "parsedString": "205%",
-          "parsedPercent": 2.05,
-          "superScript": null
-        },
-        {
-          "parsedString": "N/A",
-          "parsedPercent": null,
-          "superScript": null
-        },
-        {
-          "parsedString": "133%",
-          "parsedPercent": 1.33,
-          "superScript": null
-        },
-        {
-          "parsedString": "N/A",
-          "parsedPercent": null,
-          "superScript": null
-        },
-        {
-          "parsedString": "38%($)",
-          "parsedPercent": 0.38,
-          "superScript": null
-        },
-        {
-          "parsedString": "133%",
-          "parsedPercent": 1.33,
-          "superScript": "9"
-        }
+        { "parsedString": "205%", "parsedPercent": 2.05, "footnoteID": null },
+        { "parsedString": "205%", "parsedPercent": 2.05, "footnoteID": null },
+        { "parsedString": "205%", "parsedPercent": 2.05, "footnoteID": null },
+        { "parsedString": "N/A", "parsedPercent": null, "footnoteID": null },
+        { "parsedString": "133%", "parsedPercent": 1.33, "footnoteID": null },
+        { "parsedString": "N/A", "parsedPercent": null, "footnoteID": null },
+        { "parsedString": "38%($)", "parsedPercent": 0.38, "footnoteID": null },
+        { "parsedString": "133%", "parsedPercent": 1.33, "footnoteID": "9" }
       ],
       [
-        {
-          "parsedString": "Oregon",
-          "parsedPercent": null,
-          "superScript": null
-        },
-        {
-          "parsedString": "185%",
-          "parsedPercent": 1.85,
-          "superScript": null
-        },
-        {
-          "parsedString": "133%",
-          "parsedPercent": 1.33,
-          "superScript": null
-        },
-        {
-          "parsedString": "133%",
-          "parsedPercent": 1.33,
-          "superScript": null
-        },
-        {
-          "parsedString": "300%",
-          "parsedPercent": 3,
-          "superScript": null
-        },
-        {
-          "parsedString": "185%",
-          "parsedPercent": 1.85,
-          "superScript": null
-        },
-        {
-          "parsedString": "N/A",
-          "parsedPercent": null,
-          "superScript": null
-        },
-        {
-          "parsedString": "37%($)",
-          "parsedPercent": 0.37,
-          "superScript": null
-        },
-        {
-          "parsedString": "133%",
-          "parsedPercent": 1.33,
-          "superScript": null
-        }
+        { "parsedString": "Oregon", "parsedPercent": null, "footnoteID": null },
+        { "parsedString": "185%", "parsedPercent": 1.85, "footnoteID": null },
+        { "parsedString": "133%", "parsedPercent": 1.33, "footnoteID": null },
+        { "parsedString": "133%", "parsedPercent": 1.33, "footnoteID": null },
+        { "parsedString": "300%", "parsedPercent": 3, "footnoteID": null },
+        { "parsedString": "185%", "parsedPercent": 1.85, "footnoteID": null },
+        { "parsedString": "N/A", "parsedPercent": null, "footnoteID": null },
+        { "parsedString": "37%($)", "parsedPercent": 0.37, "footnoteID": null },
+        { "parsedString": "133%", "parsedPercent": 1.33, "footnoteID": null }
       ],
       [
         {
           "parsedString": "Pennsylvania",
           "parsedPercent": null,
-          "superScript": null
+          "footnoteID": null
         },
-        {
-          "parsedString": "215%",
-          "parsedPercent": 2.15,
-          "superScript": null
-        },
-        {
-          "parsedString": "157%",
-          "parsedPercent": 1.57,
-          "superScript": null
-        },
-        {
-          "parsedString": "133%",
-          "parsedPercent": 1.33,
-          "superScript": null
-        },
-        {
-          "parsedString": "314%",
-          "parsedPercent": 3.14,
-          "superScript": null
-        },
-        {
-          "parsedString": "215%",
-          "parsedPercent": 2.15,
-          "superScript": null
-        },
-        {
-          "parsedString": "N/A",
-          "parsedPercent": null,
-          "superScript": null
-        },
-        {
-          "parsedString": "33%",
-          "parsedPercent": 0.33,
-          "superScript": null
-        },
-        {
-          "parsedString": "133%",
-          "parsedPercent": 1.33,
-          "superScript": null
-        }
+        { "parsedString": "215%", "parsedPercent": 2.15, "footnoteID": null },
+        { "parsedString": "157%", "parsedPercent": 1.57, "footnoteID": null },
+        { "parsedString": "133%", "parsedPercent": 1.33, "footnoteID": null },
+        { "parsedString": "314%", "parsedPercent": 3.14, "footnoteID": null },
+        { "parsedString": "215%", "parsedPercent": 2.15, "footnoteID": null },
+        { "parsedString": "N/A", "parsedPercent": null, "footnoteID": null },
+        { "parsedString": "33%", "parsedPercent": 0.33, "footnoteID": null },
+        { "parsedString": "133%", "parsedPercent": 1.33, "footnoteID": null }
       ],
       [
         {
           "parsedString": "Rhode Island",
           "parsedPercent": null,
-          "superScript": null
+          "footnoteID": null
         },
-        {
-          "parsedString": "261%",
-          "parsedPercent": 2.61,
-          "superScript": null
-        },
-        {
-          "parsedString": "261%",
-          "parsedPercent": 2.61,
-          "superScript": null
-        },
-        {
-          "parsedString": "261%",
-          "parsedPercent": 2.61,
-          "superScript": null
-        },
-        {
-          "parsedString": "N/A",
-          "parsedPercent": null,
-          "superScript": null
-        },
-        {
-          "parsedString": "190%",
-          "parsedPercent": 1.9,
-          "superScript": null
-        },
-        {
-          "parsedString": "253%",
-          "parsedPercent": 2.53,
-          "superScript": null
-        },
-        {
-          "parsedString": "116%",
-          "parsedPercent": 1.16,
-          "superScript": null
-        },
-        {
-          "parsedString": "133%",
-          "parsedPercent": 1.33,
-          "superScript": null
-        }
+        { "parsedString": "261%", "parsedPercent": 2.61, "footnoteID": null },
+        { "parsedString": "261%", "parsedPercent": 2.61, "footnoteID": null },
+        { "parsedString": "261%", "parsedPercent": 2.61, "footnoteID": null },
+        { "parsedString": "N/A", "parsedPercent": null, "footnoteID": null },
+        { "parsedString": "190%", "parsedPercent": 1.9, "footnoteID": null },
+        { "parsedString": "253%", "parsedPercent": 2.53, "footnoteID": null },
+        { "parsedString": "116%", "parsedPercent": 1.16, "footnoteID": null },
+        { "parsedString": "133%", "parsedPercent": 1.33, "footnoteID": null }
       ],
       [
         {
           "parsedString": "South Carolina",
           "parsedPercent": null,
-          "superScript": null
+          "footnoteID": null
         },
-        {
-          "parsedString": "208%",
-          "parsedPercent": 2.08,
-          "superScript": null
-        },
-        {
-          "parsedString": "208%",
-          "parsedPercent": 2.08,
-          "superScript": null
-        },
-        {
-          "parsedString": "208%",
-          "parsedPercent": 2.08,
-          "superScript": null
-        },
-        {
-          "parsedString": "N/A",
-          "parsedPercent": null,
-          "superScript": null
-        },
-        {
-          "parsedString": "194%",
-          "parsedPercent": 1.94,
-          "superScript": null
-        },
-        {
-          "parsedString": "N/A",
-          "parsedPercent": null,
-          "superScript": null
-        },
-        {
-          "parsedString": "95%",
-          "parsedPercent": 0.95,
-          "superScript": null
-        },
-        {
-          "parsedString": "No",
-          "parsedPercent": null,
-          "superScript": "9"
-        }
+        { "parsedString": "208%", "parsedPercent": 2.08, "footnoteID": null },
+        { "parsedString": "208%", "parsedPercent": 2.08, "footnoteID": null },
+        { "parsedString": "208%", "parsedPercent": 2.08, "footnoteID": null },
+        { "parsedString": "N/A", "parsedPercent": null, "footnoteID": null },
+        { "parsedString": "194%", "parsedPercent": 1.94, "footnoteID": null },
+        { "parsedString": "N/A", "parsedPercent": null, "footnoteID": null },
+        { "parsedString": "95%", "parsedPercent": 0.95, "footnoteID": null },
+        { "parsedString": "No", "parsedPercent": null, "footnoteID": "9" }
       ],
       [
         {
           "parsedString": "South Dakota",
           "parsedPercent": null,
-          "superScript": null
+          "footnoteID": null
         },
-        {
-          "parsedString": "182%",
-          "parsedPercent": 1.82,
-          "superScript": null
-        },
-        {
-          "parsedString": "182%",
-          "parsedPercent": 1.82,
-          "superScript": null
-        },
-        {
-          "parsedString": "182%",
-          "parsedPercent": 1.82,
-          "superScript": null
-        },
-        {
-          "parsedString": "204%",
-          "parsedPercent": 2.04,
-          "superScript": null
-        },
-        {
-          "parsedString": "133%",
-          "parsedPercent": 1.33,
-          "superScript": null
-        },
-        {
-          "parsedString": "N/A",
-          "parsedPercent": null,
-          "superScript": null
-        },
-        {
-          "parsedString": "52%($)",
-          "parsedPercent": 0.52,
-          "superScript": null
-        },
-        {
-          "parsedString": "No",
-          "parsedPercent": null,
-          "superScript": null
-        }
+        { "parsedString": "182%", "parsedPercent": 1.82, "footnoteID": null },
+        { "parsedString": "182%", "parsedPercent": 1.82, "footnoteID": null },
+        { "parsedString": "182%", "parsedPercent": 1.82, "footnoteID": null },
+        { "parsedString": "204%", "parsedPercent": 2.04, "footnoteID": null },
+        { "parsedString": "133%", "parsedPercent": 1.33, "footnoteID": null },
+        { "parsedString": "N/A", "parsedPercent": null, "footnoteID": null },
+        { "parsedString": "52%($)", "parsedPercent": 0.52, "footnoteID": null },
+        { "parsedString": "No", "parsedPercent": null, "footnoteID": null }
       ],
       [
         {
           "parsedString": "Tennessee",
           "parsedPercent": null,
-          "superScript": null
+          "footnoteID": null
         },
-        {
-          "parsedString": "195%",
-          "parsedPercent": 1.95,
-          "superScript": null
-        },
-        {
-          "parsedString": "142%",
-          "parsedPercent": 1.42,
-          "superScript": null
-        },
-        {
-          "parsedString": "133%",
-          "parsedPercent": 1.33,
-          "superScript": null
-        },
-        {
-          "parsedString": "250%",
-          "parsedPercent": 2.5,
-          "superScript": null
-        },
-        {
-          "parsedString": "195%",
-          "parsedPercent": 1.95,
-          "superScript": null
-        },
-        {
-          "parsedString": "N/A",
-          "parsedPercent": null,
-          "superScript": null
-        },
-        {
-          "parsedString": "95%($)",
-          "parsedPercent": 0.95,
-          "superScript": null
-        },
-        {
-          "parsedString": "No",
-          "parsedPercent": null,
-          "superScript": null
-        }
+        { "parsedString": "195%", "parsedPercent": 1.95, "footnoteID": null },
+        { "parsedString": "142%", "parsedPercent": 1.42, "footnoteID": null },
+        { "parsedString": "133%", "parsedPercent": 1.33, "footnoteID": null },
+        { "parsedString": "250%", "parsedPercent": 2.5, "footnoteID": null },
+        { "parsedString": "195%", "parsedPercent": 1.95, "footnoteID": null },
+        { "parsedString": "N/A", "parsedPercent": null, "footnoteID": null },
+        { "parsedString": "95%($)", "parsedPercent": 0.95, "footnoteID": null },
+        { "parsedString": "No", "parsedPercent": null, "footnoteID": null }
       ],
       [
-        {
-          "parsedString": "Texas",
-          "parsedPercent": null,
-          "superScript": null
-        },
-        {
-          "parsedString": "198%",
-          "parsedPercent": 1.98,
-          "superScript": null
-        },
-        {
-          "parsedString": "144%",
-          "parsedPercent": 1.44,
-          "superScript": null
-        },
-        {
-          "parsedString": "133%",
-          "parsedPercent": 1.33,
-          "superScript": null
-        },
-        {
-          "parsedString": "201%",
-          "parsedPercent": 2.01,
-          "superScript": null
-        },
-        {
-          "parsedString": "198%",
-          "parsedPercent": 1.98,
-          "superScript": null
-        },
-        {
-          "parsedString": "N/A",
-          "parsedPercent": null,
-          "superScript": null
-        },
-        {
-          "parsedString": "14%($)",
-          "parsedPercent": 0.14,
-          "superScript": null
-        },
-        {
-          "parsedString": "No",
-          "parsedPercent": null,
-          "superScript": null
-        }
+        { "parsedString": "Texas", "parsedPercent": null, "footnoteID": null },
+        { "parsedString": "198%", "parsedPercent": 1.98, "footnoteID": null },
+        { "parsedString": "144%", "parsedPercent": 1.44, "footnoteID": null },
+        { "parsedString": "133%", "parsedPercent": 1.33, "footnoteID": null },
+        { "parsedString": "201%", "parsedPercent": 2.01, "footnoteID": null },
+        { "parsedString": "198%", "parsedPercent": 1.98, "footnoteID": null },
+        { "parsedString": "N/A", "parsedPercent": null, "footnoteID": null },
+        { "parsedString": "14%($)", "parsedPercent": 0.14, "footnoteID": null },
+        { "parsedString": "No", "parsedPercent": null, "footnoteID": null }
       ],
       [
-        {
-          "parsedString": "Utah",
-          "parsedPercent": null,
-          "superScript": null
-        },
-        {
-          "parsedString": "139%",
-          "parsedPercent": 1.39,
-          "superScript": null
-        },
-        {
-          "parsedString": "139%",
-          "parsedPercent": 1.39,
-          "superScript": null
-        },
-        {
-          "parsedString": "133%",
-          "parsedPercent": 1.33,
-          "superScript": null
-        },
-        {
-          "parsedString": "200%",
-          "parsedPercent": 2,
-          "superScript": null
-        },
-        {
-          "parsedString": "139%",
-          "parsedPercent": 1.39,
-          "superScript": null
-        },
-        {
-          "parsedString": "N/A",
-          "parsedPercent": null,
-          "superScript": null
-        },
-        {
-          "parsedString": "41%($)",
-          "parsedPercent": 0.41,
-          "superScript": null
-        },
-        {
-          "parsedString": "133%",
-          "parsedPercent": 1.33,
-          "superScript": "9"
-        }
+        { "parsedString": "Utah", "parsedPercent": null, "footnoteID": null },
+        { "parsedString": "139%", "parsedPercent": 1.39, "footnoteID": null },
+        { "parsedString": "139%", "parsedPercent": 1.39, "footnoteID": null },
+        { "parsedString": "133%", "parsedPercent": 1.33, "footnoteID": null },
+        { "parsedString": "200%", "parsedPercent": 2, "footnoteID": null },
+        { "parsedString": "139%", "parsedPercent": 1.39, "footnoteID": null },
+        { "parsedString": "N/A", "parsedPercent": null, "footnoteID": null },
+        { "parsedString": "41%($)", "parsedPercent": 0.41, "footnoteID": null },
+        { "parsedString": "133%", "parsedPercent": 1.33, "footnoteID": "9" }
       ],
       [
         {
           "parsedString": "Vermont",
           "parsedPercent": null,
-          "superScript": null
+          "footnoteID": null
         },
-        {
-          "parsedString": "312%",
-          "parsedPercent": 3.12,
-          "superScript": null
-        },
-        {
-          "parsedString": "312%",
-          "parsedPercent": 3.12,
-          "superScript": null
-        },
-        {
-          "parsedString": "312%",
-          "parsedPercent": 3.12,
-          "superScript": null
-        },
-        {
-          "parsedString": "N/A",
-          "parsedPercent": null,
-          "superScript": null
-        },
-        {
-          "parsedString": "208%",
-          "parsedPercent": 2.08,
-          "superScript": null
-        },
-        {
-          "parsedString": "N/A",
-          "parsedPercent": null,
-          "superScript": null
-        },
-        {
-          "parsedString": "49%($)",
-          "parsedPercent": 0.49,
-          "superScript": null
-        },
-        {
-          "parsedString": "133%",
-          "parsedPercent": 1.33,
-          "superScript": null
-        }
+        { "parsedString": "312%", "parsedPercent": 3.12, "footnoteID": null },
+        { "parsedString": "312%", "parsedPercent": 3.12, "footnoteID": null },
+        { "parsedString": "312%", "parsedPercent": 3.12, "footnoteID": null },
+        { "parsedString": "N/A", "parsedPercent": null, "footnoteID": null },
+        { "parsedString": "208%", "parsedPercent": 2.08, "footnoteID": null },
+        { "parsedString": "N/A", "parsedPercent": null, "footnoteID": null },
+        { "parsedString": "49%($)", "parsedPercent": 0.49, "footnoteID": null },
+        { "parsedString": "133%", "parsedPercent": 1.33, "footnoteID": null }
       ],
       [
         {
           "parsedString": "Virginia",
           "parsedPercent": null,
-          "superScript": null
+          "footnoteID": null
         },
-        {
-          "parsedString": "143%",
-          "parsedPercent": 1.43,
-          "superScript": null
-        },
-        {
-          "parsedString": "143%",
-          "parsedPercent": 1.43,
-          "superScript": null
-        },
-        {
-          "parsedString": "143%",
-          "parsedPercent": 1.43,
-          "superScript": null
-        },
-        {
-          "parsedString": "200%",
-          "parsedPercent": 2,
-          "superScript": null
-        },
-        {
-          "parsedString": "143%",
-          "parsedPercent": 1.43,
-          "superScript": null
-        },
-        {
-          "parsedString": "200%",
-          "parsedPercent": 2,
-          "superScript": null
-        },
-        {
-          "parsedString": "49%($)",
-          "parsedPercent": 0.49,
-          "superScript": null
-        },
-        {
-          "parsedString": "133%",
-          "parsedPercent": 1.33,
-          "superScript": null
-        }
+        { "parsedString": "143%", "parsedPercent": 1.43, "footnoteID": null },
+        { "parsedString": "143%", "parsedPercent": 1.43, "footnoteID": null },
+        { "parsedString": "143%", "parsedPercent": 1.43, "footnoteID": null },
+        { "parsedString": "200%", "parsedPercent": 2, "footnoteID": null },
+        { "parsedString": "143%", "parsedPercent": 1.43, "footnoteID": null },
+        { "parsedString": "200%", "parsedPercent": 2, "footnoteID": null },
+        { "parsedString": "49%($)", "parsedPercent": 0.49, "footnoteID": null },
+        { "parsedString": "133%", "parsedPercent": 1.33, "footnoteID": null }
       ],
       [
         {
           "parsedString": "Washington",
           "parsedPercent": null,
-          "superScript": null
+          "footnoteID": null
         },
-        {
-          "parsedString": "210%",
-          "parsedPercent": 2.1,
-          "superScript": null
-        },
-        {
-          "parsedString": "210%",
-          "parsedPercent": 2.1,
-          "superScript": null
-        },
-        {
-          "parsedString": "210%",
-          "parsedPercent": 2.1,
-          "superScript": null
-        },
-        {
-          "parsedString": "312%",
-          "parsedPercent": 3.12,
-          "superScript": null
-        },
-        {
-          "parsedString": "193%",
-          "parsedPercent": 1.93,
-          "superScript": null
-        },
-        {
-          "parsedString": "N/A",
-          "parsedPercent": null,
-          "superScript": null
-        },
-        {
-          "parsedString": "37%($)",
-          "parsedPercent": 0.37,
-          "superScript": null
-        },
-        {
-          "parsedString": "133%",
-          "parsedPercent": 1.33,
-          "superScript": null
-        }
+        { "parsedString": "210%", "parsedPercent": 2.1, "footnoteID": null },
+        { "parsedString": "210%", "parsedPercent": 2.1, "footnoteID": null },
+        { "parsedString": "210%", "parsedPercent": 2.1, "footnoteID": null },
+        { "parsedString": "312%", "parsedPercent": 3.12, "footnoteID": null },
+        { "parsedString": "193%", "parsedPercent": 1.93, "footnoteID": null },
+        { "parsedString": "N/A", "parsedPercent": null, "footnoteID": null },
+        { "parsedString": "37%($)", "parsedPercent": 0.37, "footnoteID": null },
+        { "parsedString": "133%", "parsedPercent": 1.33, "footnoteID": null }
       ],
       [
         {
           "parsedString": "West Virginia",
           "parsedPercent": null,
-          "superScript": null
+          "footnoteID": null
         },
-        {
-          "parsedString": "158%",
-          "parsedPercent": 1.58,
-          "superScript": null
-        },
-        {
-          "parsedString": "141%",
-          "parsedPercent": 1.41,
-          "superScript": null
-        },
-        {
-          "parsedString": "133%",
-          "parsedPercent": 1.33,
-          "superScript": null
-        },
-        {
-          "parsedString": "300%",
-          "parsedPercent": 3,
-          "superScript": null
-        },
-        {
-          "parsedString": "185%",
-          "parsedPercent": 1.85,
-          "superScript": null
-        },
-        {
-          "parsedString": "300%",
-          "parsedPercent": 3,
-          "superScript": null
-        },
-        {
-          "parsedString": "18%($)",
-          "parsedPercent": 0.18,
-          "superScript": null
-        },
-        {
-          "parsedString": "133%",
-          "parsedPercent": 1.33,
-          "superScript": null
-        }
+        { "parsedString": "158%", "parsedPercent": 1.58, "footnoteID": null },
+        { "parsedString": "141%", "parsedPercent": 1.41, "footnoteID": null },
+        { "parsedString": "133%", "parsedPercent": 1.33, "footnoteID": null },
+        { "parsedString": "300%", "parsedPercent": 3, "footnoteID": null },
+        { "parsedString": "185%", "parsedPercent": 1.85, "footnoteID": null },
+        { "parsedString": "300%", "parsedPercent": 3, "footnoteID": null },
+        { "parsedString": "18%($)", "parsedPercent": 0.18, "footnoteID": null },
+        { "parsedString": "133%", "parsedPercent": 1.33, "footnoteID": null }
       ],
       [
         {
           "parsedString": "Wisconsin",
           "parsedPercent": null,
-          "superScript": null
+          "footnoteID": null
         },
-        {
-          "parsedString": "301%",
-          "parsedPercent": 3.01,
-          "superScript": null
-        },
-        {
-          "parsedString": "186%",
-          "parsedPercent": 1.86,
-          "superScript": null
-        },
-        {
-          "parsedString": "151%",
-          "parsedPercent": 1.51,
-          "superScript": null
-        },
+        { "parsedString": "301%", "parsedPercent": 3.01, "footnoteID": null },
+        { "parsedString": "186%", "parsedPercent": 1.86, "footnoteID": null },
+        { "parsedString": "151%", "parsedPercent": 1.51, "footnoteID": null },
         {
           "parsedString": "301% (1 up to19)",
           "parsedPercent": 3.01,
-          "superScript": null
+          "footnoteID": null
         },
-        {
-          "parsedString": "301%",
-          "parsedPercent": 3.01,
-          "superScript": null
-        },
-        {
-          "parsedString": "N/A",
-          "parsedPercent": null,
-          "superScript": null
-        },
-        {
-          "parsedString": "95%",
-          "parsedPercent": 0.95,
-          "superScript": "9"
-        },
-        {
-          "parsedString": "No/95%",
-          "parsedPercent": null,
-          "superScript": "9"
-        }
+        { "parsedString": "301%", "parsedPercent": 3.01, "footnoteID": null },
+        { "parsedString": "N/A", "parsedPercent": null, "footnoteID": null },
+        { "parsedString": "95%", "parsedPercent": 0.95, "footnoteID": "9" },
+        { "parsedString": "No/95%", "parsedPercent": null, "footnoteID": "9" }
       ],
       [
         {
           "parsedString": "Wyoming",
           "parsedPercent": null,
-          "superScript": null
+          "footnoteID": null
         },
-        {
-          "parsedString": "200%",
-          "parsedPercent": 2,
-          "superScript": null
-        },
-        {
-          "parsedString": "200%",
-          "parsedPercent": 2,
-          "superScript": null
-        },
-        {
-          "parsedString": "200%",
-          "parsedPercent": 2,
-          "superScript": null
-        },
-        {
-          "parsedString": "N/A",
-          "parsedPercent": null,
-          "superScript": null
-        },
-        {
-          "parsedString": "154%",
-          "parsedPercent": 1.54,
-          "superScript": null
-        },
-        {
-          "parsedString": "N/A",
-          "parsedPercent": null,
-          "superScript": null
-        },
-        {
-          "parsedString": "51%($)",
-          "parsedPercent": 0.51,
-          "superScript": null
-        },
-        {
-          "parsedString": "No",
-          "parsedPercent": null,
-          "superScript": null
-        }
+        { "parsedString": "200%", "parsedPercent": 2, "footnoteID": null },
+        { "parsedString": "200%", "parsedPercent": 2, "footnoteID": null },
+        { "parsedString": "200%", "parsedPercent": 2, "footnoteID": null },
+        { "parsedString": "N/A", "parsedPercent": null, "footnoteID": null },
+        { "parsedString": "154%", "parsedPercent": 1.54, "footnoteID": null },
+        { "parsedString": "N/A", "parsedPercent": null, "footnoteID": null },
+        { "parsedString": "51%($)", "parsedPercent": 0.51, "footnoteID": null },
+        { "parsedString": "No", "parsedPercent": null, "footnoteID": null }
       ]
     ]
   },
-  "footnotesJson": [
+  "footnotes": [
     "These eligibility standards include CHIP-funded Medicaid expansions for children under age 19. Children eligible for a CHIP-funded Medicaid expansion may be covered either under the mandatory children’s group or under the optional targeted low-income child group. Expanded Medicaid eligibility after 1997 qualifies for CHIP funding.",
     "CHIP covers birth up to age 19 unless otherwise noted in parentheses.",
     "CHIP gives states the option to cover pregnant women and children from conception to birth. This table shows coverage of pregnant women only.",
@@ -2449,5 +802,6 @@
     "The state has a section 1115 demonstration, which provides Medicaid coverage to some additional low-income adults. In some cases, coverage:\n\tIncludes limitations on eligibility and benefits\n\t\tIs not offered to all residents of the state\n\t\tIncludes an enrollment cap",
     "Minnesota covers children up to age 2 with incomes up to 283% of the FPL.",
     "Adults with incomes from above 133% and up to 200% of the FPL are covered through BHP."
-  ]
+  ],
+  "scrapedOn": "2023-04-19T03:24:07.508Z"
 }

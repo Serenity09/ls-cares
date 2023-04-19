@@ -13,7 +13,11 @@ export default function TheGoodPart() {
 
   //TODO remove
   //datagrid placeholder -- in final product the table will only be available as a reference. part of the goal is to present the table as a full paragraph, made relevant to the user
-  const filteredColumns = getColumns(user.age, user.isPregnant, user.familySize);
+  const filteredColumns = getColumns(
+    user.age,
+    user.isPregnant,
+    user.familySize
+  );
   const tableColumns = filteredColumns.map((column, columnID) => {
     return {
       field: `column${columnID}`,

@@ -21,7 +21,7 @@ import { useUserContext } from "../../user/UserContext";
 
 export default function WhatAboutYou() {
   const { user, setUser } = useUserContext();
-  const [usStateValue, setUSStateValue] = useState<string | null>(
+  const [usState, setUSState] = useState<string | null>(
     getUSStateByAbbreviation(user.usState)
       ? // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
         getUSStateByAbbreviation(user.usState)!.name
@@ -44,9 +44,9 @@ export default function WhatAboutYou() {
         sx={{ mt: "1rem" }}
       >
         <Autocomplete
-          value={usStateValue}
+          value={usState}
           onChange={(event: React.SyntheticEvent, newValue: string | null) => {
-            setUSStateValue(newValue);
+            setUSState(newValue);
 
             const usState = getUSStateByName(newValue);
             setUser({

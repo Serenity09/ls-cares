@@ -15,13 +15,12 @@ export default function getPovertyLevel(
     return (
       POVERTY_LEVEL_ALASKA_BASE + POVERTY_LEVEL_ALASKA_RATE * (familySize - 1)
     );
-  else if (stateAbbreviation === "HI")
+  if (stateAbbreviation === "HI")
     return (
       POVERTY_LEVEL_HAWAII_BASE + POVERTY_LEVEL_HAWAII_RATE * (familySize - 1)
     );
-  else
-    return (
-      POVERTY_LEVEL_STANDARD_BASE +
-      POVERTY_LEVEL_STANDARD_RATE * (familySize - 1)
-    );
+
+  return (
+    POVERTY_LEVEL_STANDARD_BASE + POVERTY_LEVEL_STANDARD_RATE * (familySize - 1)
+  );
 }

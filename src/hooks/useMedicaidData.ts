@@ -3,7 +3,7 @@ import medicaidData from "../data/medicaid-data.json";
 
 type MedicaidColumn = {
   parsedString: string;
-  superScript: string | null;
+  footnoteID: string | null;
 
   isState: boolean;
   ageMinimum: number;
@@ -19,7 +19,7 @@ type MedicaidRow = {
 type MedicaidCell = {
   parsedString: string;
   parsedPercent: number | null;
-  superScript: string | null;
+  footnoteID: string | null;
 
   column: MedicaidColumn;
 };
@@ -30,22 +30,22 @@ export function useMedicaidData() {
 
   //process columns and rows into a more queryable form, and link corresponding columns to each cell
   useEffect(() => {
-    const columns: MedicaidColumn[] =
-      medicaidData.medicaidTableJson.columnNames.map((rawColumn) => {
+    const columns: MedicaidColumn[] = medicaidData.table.columns.map(
+      (rawColumn) => {
         const column: MedicaidColumn = {
           parsedString: rawColumn.parsedString,
-          superScript: rawColumn.superScript,
+          footnoteID: rawColumn.footnoteID,
 
-          isState: rawColumn.parsedString.toLowerCase().includes("state"),
-          ageMinimum: 19,
+          isState: false,
+          ageMinimum: 0,
           ageMaximum: null,
-          isForPregnantWomen: rawColumn.parsedString
-            .toLowerCase()
-            .includes("pregnant"),
+          isForPregnantWomen: false,
           isFamily: false,
         };
 
-        // Determine age range
+        column.isState = column.parsedString.toLowerCase().includes("state");
+
+        column.ageMinimum = 19;
         if (column.parsedString.toLowerCase().includes("ages")) {
           const splitColumnName = column.parsedString.split(" ");
           const strAgeRange = splitColumnName.filter(
@@ -60,43 +60,51 @@ export function useMedicaidData() {
 
           column.ageMinimum = parseInt(splitAgeRange[0]);
           column.ageMaximum = parseInt(splitAgeRange[1]);
+        } else if (column.parsedString.toLowerCase().includes("chip")) {
+          column.ageMinimum = 0;
+
+          if (!column.parsedString.toLowerCase().includes("pregnant")) {
+            column.ageMaximum = 19;
+          }
         }
 
-        // Check for isFamily
+        column.isForPregnantWomen = column.parsedString
+          .toLowerCase()
+          .includes("pregnant");
+
         column.isFamily =
           column.parsedString.toLowerCase().includes("parent") ||
           column.parsedString.toLowerCase().includes("caregiver");
 
         return column;
-      });
+      }
+    );
 
     setColumns(columns);
-  }, [medicaidData.medicaidTableJson.columnNames]);
+  }, [medicaidData.table.columns]);
   useEffect(() => {
     if (columns.length === 0) return;
 
     const stateColumnId = columns.findIndex((column) => column.isState);
     if (stateColumnId != 0) throw "State must be first item in json array";
 
-    const rows: MedicaidRow[] = medicaidData.medicaidTableJson.data.map(
-      (rawRow) => {
-        return {
-          state: rawRow[stateColumnId].parsedString,
-          data: rawRow.slice(stateColumnId + 1).map((rawCell, iColumn) => {
-            return {
-              parsedString: rawCell.parsedString,
-              parsedPercent: rawCell.parsedPercent,
-              superScript: rawCell.superScript,
+    const rows: MedicaidRow[] = medicaidData.table.data.map((rawRow) => {
+      return {
+        state: rawRow[stateColumnId].parsedString,
+        data: rawRow.slice(stateColumnId + 1).map((rawCell, iColumn) => {
+          return {
+            parsedString: rawCell.parsedString,
+            parsedPercent: rawCell.parsedPercent,
+            footnoteID: rawCell.footnoteID,
 
-              column: columns[iColumn],
-            };
-          }),
-        };
-      }
-    );
+            column: columns[iColumn],
+          };
+        }),
+      };
+    });
 
     setRows(rows);
-  }, [medicaidData.medicaidTableJson.data, columns]);
+  }, [medicaidData.table.data, columns]);
 
   const getColumns = (
     age?: number | null,
@@ -118,10 +126,10 @@ export function useMedicaidData() {
 
     if (familySize && familySize > 1)
       filters.push((column) => column.isState || column.isFamily);
-    else if (isPregnant)
-      filters.push(
-        (column) => column.isState || column.isForPregnantWomen == isPregnant
-      );
+
+    filters.push(
+      (column) => column.isState || column.isForPregnantWomen == isPregnant
+    );
 
     return columns.filter((column) => {
       let inFilter = true,
@@ -162,7 +170,7 @@ export function useMedicaidData() {
     return filteredRows;
   };
   const getFootnotes = (): string[] => {
-    return medicaidData.footnotesJson;
+    return medicaidData.footnotes;
   };
 
   return {
