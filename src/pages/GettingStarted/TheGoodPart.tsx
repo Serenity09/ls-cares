@@ -27,7 +27,7 @@ export default function TheGoodPart() {
   });
 
   const filteredRows = getRows(user.usState, filteredColumns);
-  const tablerows = filteredRows.map((filteredRow, rowID) => {
+  const tableRows = filteredRows.map((filteredRow, rowID) => {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const row: any = { id: rowID };
 
@@ -54,7 +54,7 @@ export default function TheGoodPart() {
           user.isPregnant}
       </div>
 
-      <DataGrid columns={tableColumns} rows={tablerows} autoHeight={true} />
+      <DataGrid columns={tableColumns} rows={tableRows} autoHeight={true} />
     </>
   );
 }
