@@ -1,3 +1,5 @@
+import { getPovertyLevels } from "../../services/nationalPovertyGuidelineService";
+
 import { useUserContext } from "../../user/UserContext";
 import { useMedicaidData } from "../../hooks/useMedicaidData";
 
@@ -39,6 +41,8 @@ export default function TheGoodPart() {
 
     return row;
   });
+
+  console.log("fpls", getPovertyLevels(user.familySize ?? 1));
 
   return (
     <>
